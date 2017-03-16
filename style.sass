@@ -1,0 +1,713 @@
+/* Sass Document */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Lato:300,700&subset=latin-ext')
+* 
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	border: none
+
+/* Colors */
+
+$facebook: #3b5998
+$pinterest: #bd081c
+$twitter: #4099ff
+$instagram: #eb4839
+$about: #ef572c
+$mission: #97d4df
+$gallery: #d03277
+$prices: #0c4d8a
+$contact: #87b04a
+	
+/*Breakpoints*/
+
+$big: 1200px
+$middle: 768px
+$small: 600px
+
+body 
+	margin: 0 auto
+	background-image: url(bgnotes.jpg)
+	background-size: cover
+	background-repeat: repeat-y
+	font-family: 'Lato'
+	font-weight: 300
+
+a:-webkit-any-link
+	text-decoration: none
+	cursor: auto
+
+a 
+	text-decoration: none
+
+
+.container 
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	max-width: 1200px
+	margin: 0 auto
+.fixed 
+	position: fixed
+	top: 0
+
+.static 
+	position: static
+
+
+/*Social bar*/
+
+.social
+	min-height: 60px
+	width: 100%
+	background-color: #ccc
+	
+	@media screen and (max-width: $middle)
+		position: fixed
+		top: 0
+	
+	.container
+		display: block
+		
+		.social-top
+			display: inline-block
+			float: right
+			
+			@media screen and (max-width: $middle)
+				display: none
+			
+			a
+	
+				button
+					display: inline-block
+					-ms-flex-line-pack: center
+					align-content: center
+					-webkit-box-pack: center
+					-ms-flex-pack: center
+					justify-content: center
+					width: 40px
+					height: 40px
+					line-height: 30px
+					font-size: 28px
+					border-radius: 20px
+					background-color: #fff
+					outline: none
+					margin: 10px
+					border: 1px solid #aaa
+					box-shadow: 0 0 2px #00b
+					
+					&:active
+						box-shadow: 0 0 10px #fff
+						-webkit-transform: scale(0.94)
+						transform: scale(0.94)	
+						
+		.navigation
+			display: none
+			
+			@media screen and (max-width: $middle)
+				display: block
+				width: 100%
+			
+			.hamburger-menu
+				height: 40px
+				width: 40px
+				border-radius: 3px
+				border: 1px solid #888
+				color: #fff
+				background-color: #aaa
+				outline: none
+				margin: 10px
+				font-size: 28px
+				line-height: 30px
+				float: left
+				padding: 5px
+
+#navbar
+	width: 100%
+	background-color: #ccc
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
+	flex-direction: column
+	text-align: center
+	border: none
+	position: absolute
+	top: 60px
+	left: 0
+	margin-bottom: 0
+	
+	a
+		display: inline-block
+		height: 40px
+		line-height: 40px
+		width: 90vw
+		text-align: center
+		font-size: 18px
+		background-color: #ffb216
+		color: #fff
+		margin-bottom: 15px
+		border-radius: 5px
+				
+#facebook 
+	color: $facebook
+	
+	&:hover
+		color: #fff
+		background-color: $facebook
+
+#instagram 
+	color: $instagram
+	
+	&:hover
+		color: #fff
+		background-color: $instagram
+
+#twitter 
+	color: $twitter
+	
+	&:hover
+		color: #fff
+		background-color: $twitter
+
+#pinterest 
+	color: $pinterest
+	
+	&:hover
+		color: #fff
+		background-color: $pinterest
+
+
+/*Navigation bar*/
+
+header
+	background-color: #eee
+	width: 100%
+	min-height: 100px
+	
+	@media screen and (max-width: $big)
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		
+	@media screen and (max-width: $middle)
+		display: none
+	
+	.navbar
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
+		justify-content: space-between
+		
+		@media screen and (max-width: $big)
+			-webkit-box-orient: vertical
+			-webkit-box-direction: normal
+			-ms-flex-direction: column
+			flex-direction: column
+			text-align: center
+			border: none
+
+		.logo
+	
+			&:hover
+				box-shadow: 2px 2px 4px #006
+				
+			&:active
+				-webkit-transform: scale(0.95)
+				transform: scale(0.95)
+			
+			img
+				height: 100px
+	
+		.navmenu
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			-ms-flex-line-pack: center
+			align-content: center
+			
+			@media screen and (max-width: $big)
+				width: 100%
+				margin: 10px auto
+				-ms-flex-pack: distribute
+				justify-content: space-around
+
+			ul
+				display: -webkit-box
+				display: -ms-flexbox
+				display: flex
+				-webkit-box-orient: horizontal
+				-webkit-box-direction: normal
+				-ms-flex-direction: row
+				flex-direction: row
+				width: 700px
+				-webkit-box-pack: justify
+				-ms-flex-pack: justify
+				justify-content: space-between
+				-ms-flex-line-pack: center
+				align-content: center
+				padding: 0
+				margin-top: auto
+				margin-bottom: auto
+				
+				a
+					width: 120px
+					height: 80px
+					list-style-type: none
+					font-size: 18px
+					text-transform: uppercase
+					color: #fff
+					text-align: center
+					line-height: 80px
+					background-color: #ffb216
+					border-radius: 5px
+					box-shadow: 1px 1px 3px #006
+					
+					&:active
+						box-shadow: 0 0 2px #00a
+						color: #ff3
+						text-shadow: 0 0 1px #00a
+						
+					&:active li
+						-webkit-transform: translate(-1px -1px)
+						transform: translate(-1px -1px)
+
+#about-btn
+
+	&:hover
+		background-color: $about
+		
+#mission-btn
+
+	&:hover
+		background-color: $mission
+		
+#gallery-btn
+
+	&:hover
+		background-color: $gallery
+	
+#prices-btn
+
+	&:hover
+		background-color: $prices
+		
+#contact-btn
+	&:hover
+		background-color: $contact
+
+/*Jumbotron*/
+
+.jumbotron
+	width: 100%
+	height: 80vh
+	background-image: url(bg-kids.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: bottom center
+
+	.container
+		-webkit-box-pack: end
+		-ms-flex-pack: end
+		justify-content: flex-end
+		-webkit-box-align: start
+		-ms-flex-align: start
+		align-items: flex-start
+		height: 100%
+		
+		.slogan
+			background-color: rgba(200, 200, 200, 0.4)
+			border-radius: 5px
+			margin-top: 100px
+
+			h1
+				padding: 20px
+				text-transform: uppercase
+				color: #fff
+				text-align: center
+				text-shadow: 2px 2px 5px #555
+
+/* Section about */
+
+.about
+	
+	div
+	
+		div
+	
+			h1
+				width: 100%
+	.par3
+		display: inline-block
+		max-width: 1200px
+		margin: 20px auto
+		width: 100%
+
+		img
+			width: 200px
+			float: left
+			margin-right: 20px
+		
+		p
+			margin: 0
+			font-size: 20px
+			line-height: 1.6
+			text-align: justify
+			color: #333
+		
+			.coll-dots 
+				text-decoration: none
+				
+				@media screen and (max-width: $middle)
+					display: none
+					
+		#more 
+			
+			@media screen and (max-width: $middle)
+				display: inline
+	
+	
+/* Mission section */
+
+.mission
+	
+	div
+	
+		div
+	
+			h1
+				width: 100%
+			
+		.par1
+			display: inline-block
+			max-width: 1200px
+			margin: 20px auto
+			width: 100%
+
+			img
+				width: 100px
+				height: 100px
+				float: left
+				margin-right: 20px
+	
+			p
+				margin: 0
+				font-size: 20px
+				line-height: 1.6
+				text-align: justify
+				color: #333
+	
+		.par2
+			display: inline-block
+			max-width: 1200px
+			margin: 20px auto
+			width: 100%
+
+			img
+				width: 100px
+				height: 100px
+				float: right
+				margin-left: 20px
+	
+			p
+				margin: 0
+				font-size: 20px
+				line-height: 1.6
+				text-align: justify
+				color: #333
+	
+.about div:first-child, .mission div:first-child 
+	margin: 50px auto
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
+	flex-direction: column
+	text-align: center
+
+
+/*Pictures gallery*/
+
+.gallery
+	min-height: 40vw
+	width: 100%
+	line-height: 0
+	margin-top: 50px
+	margin-bottom: 50px
+	
+	@media screen and (max-width: $middle)
+		min-height: 100vw
+	
+	.photo
+		width: 25%
+		height: 20vw
+		float: left
+		
+		@media screen and (max-width: $middle)
+			width: 100%
+			height: 100vw
+			float: none
+			
+		&:hover .cover 
+			display: block
+		
+		img
+			width: 100%
+			height: 20vw
+			
+			@media screen and (max-width: $middle)
+				width: 100%
+				height: 100vw
+	
+		.cover
+			display: none
+			width: 100%
+			height: 20vw
+			background-color: rgba(100, 100, 100, 0.4)
+			line-height: 20vw
+			position: relative
+			top: -20vw
+			text-align: center
+			
+			@media screen and (max-width: $middle)
+				display: none
+				width: 100%
+				height: 100vw
+				line-height: 100vw
+				top: -100vw
+	
+			a
+				line-height: 20vw
+				
+				@media screen and (max-width: $middle)
+					line-height: 100vw
+	
+				.photo-btn
+					width: 40px
+					height: 40px
+					background-color: #ffa216
+					color: #006
+					border: none
+					border-radius: 5px
+					cursor: pointer
+					font-size: 24px
+					line-height: 30px
+					outline: none
+					
+					@media screen and (max-width: $middle)
+						width: 60px
+						height: 60px
+						background-color: #ffa216
+						color: #006
+						border: none
+						border-radius: 5px
+						cursor: pointer
+						font-size: 34px
+						line-height: 40px
+						outline: none
+
+.photo:nth-child(5), .photo:nth-child(6), .photo:nth-child(7), .photo:nth-child(8)
+		
+	@media screen and (max-width: $middle)
+		display: none		
+		
+/*Prices table*/
+
+.prices 
+	margin-top: 100px
+	margin-bottom: 100px
+	
+	.container
+		justify-content: center
+		margin-bottom: 50px
+
+	.container-prices
+		max-width: 1200px
+		margin: 0 auto
+		text-align: center
+		
+		.package
+			text-align: center
+			padding: 10px
+			position: static
+			
+			h3
+				line-height: 35px
+				
+				&:nth-child(1)
+					text-align: left
+					margin-left: 20px
+				
+				&:nth-child(2)
+					text-align: center
+					font-size: 28px
+				
+			.price-row
+				width: 100%
+				margin: 0
+				
+				.price-atr
+					text-align: center
+					position: static
+				
+					div
+						
+						height: 150px
+						width: 200px
+						margin: 20px auto
+						color: #fff
+						border-radius: 10px
+						box-shadow: 2px 2px 5px #555
+						
+						@media screen and (max-width: $small)
+							width: 35vw
+						
+						p
+							font-size: 50px
+							text-align: center
+							line-height: 150px
+							text-shadow: 2px 2px 3px #555
+							
+							@media screen and (max-width: $small)
+								font-size: 30px
+							
+					h4
+						font-size: 30px
+						text-align: center
+					
+			.price-text
+				width: 100%
+				padding: 20px
+				
+				p
+					text-align: justify
+					font-size: 20px
+					line-height: 1.6
+					text-align: justify
+					color: #333
+
+.time
+	background-color: $about
+	
+.price
+	background-color: $prices	
+	
+.time1
+	background-color: $contact
+	
+.price1
+	background-color: $gallery
+	
+/*Footer*/
+
+footer
+	background-color: #eee
+
+	div
+		margin-bottom: 0
+
+		.flex-row
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			-webkit-box-orient: horizontal
+			-webkit-box-direction: normal
+			-ms-flex-direction: row
+			flex-direction: row
+			width: 100%
+			min-height: 200px
+			
+			@media screen and (max-width: $big)
+				-webkit-box-orient: vertical
+				-webkit-box-direction: normal
+				-ms-flex-direction: column
+				flex-direction: column
+				
+			@media screen and (max-width: $middle)
+				margin-bottom: 0
+				padding-bottom: 30px
+
+			.left-col
+				width: 25%
+				
+				@media screen and (max-width: $big)
+					width: 100%
+	
+				ul
+					list-style-type: none
+					padding-left: 0
+	
+					a
+						color: inherit
+	
+			.middle-col
+				width: 50%
+				-webkit-box-pack: center
+				-ms-flex-pack: center
+				justify-content: center
+				
+				@media screen and (max-width: $big)
+					width: 100%
+	
+				.map
+				
+					text-align: center
+					
+					iframe
+						width: 500px
+						height: 300px
+						border: 2px solid #ccc
+						margin-bottom: 20px
+						
+						@media screen and (max-width: $big)
+							margin: 30px auto
+							
+						@media screen and (max-width: $small)
+							width: 90vw
+	
+			.right-col
+				display: -webkit-box
+				display: -ms-flexbox
+				display: flex
+				height: 100%
+				width: 25%
+				-webkit-box-orient: horizontal
+				-webkit-box-direction: normal
+				-ms-flex-direction: row
+				flex-direction: row
+				-ms-flex-pack: distribute
+				justify-content: space-around
+				-ms-flex-line-pack: center
+				align-content: center
+				padding-top: 50px
+				
+				@media screen and (max-width: $big)
+					width: 100%
+					-ms-flex-pack: distribute
+					justify-content: space-around
+					padding: 30px 0
+	
+				a
+					display: -webkit-box
+					display: -ms-flexbox
+					display: flex
+					width: 40px
+					height: 40px
+		
+					button
+						width: 40px
+						height: 40px
+						text-align: center
+						line-height: 30px
+						outline: none
+						border-radius: 50%
+						font-size: 24px
+						background-color: #fff
+						margin: 10px auto
+						border: 1px solid #aaa
+						box-shadow: 0 0 2px #00b
+						
+						&:active
+							box-shadow: 0 0 10px #fff
+							-webkit-transform: scale(0.94)
+							transform: scale(0.94)
+							
+						@media screen and (max-width: $big)
+							margin: 0 auto
