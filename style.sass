@@ -61,6 +61,7 @@ a
 	min-height: 60px
 	width: 100%
 	background-color: #ccc
+	z-index: 10
 	
 	@media screen and (max-width: $middle)
 		position: fixed
@@ -107,6 +108,19 @@ a
 			@media screen and (max-width: $middle)
 				display: block
 				width: 100%
+
+			.logo_small
+				height: 60px
+				float: left
+				display: none
+
+				@media screen and (max-width: $middle)
+					display: block
+
+				img
+					height: 50px
+					margin-top: 5px
+					margin-left: 10px
 			
 			.hamburger-menu
 				height: 40px
@@ -119,7 +133,7 @@ a
 				margin: 10px
 				font-size: 28px
 				line-height: 30px
-				float: left
+				float: right
 				padding: 5px
 
 #navbar
@@ -465,6 +479,7 @@ header
 			position: relative
 			top: -20vw
 			text-align: center
+			z-index: 1
 			
 			@media screen and (max-width: $middle)
 				display: none
