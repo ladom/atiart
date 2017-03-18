@@ -1,0 +1,23 @@
+{
+  "name": "atiart",
+  "version": "1.0.0",
+  "description": "Strona domowa firmy AtiArt",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladom/atiart.git"
+  },
+  "author": "Andrzej Ładomirski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladom/atiart/issues"
+  },
+  "homepage": "https://github.com/ladom/atiart#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  }
+}
