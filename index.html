@@ -39,8 +39,12 @@
 					<div class="logo_small">
 						<img src="https://github.com/ladom/atiart/blob/master/odkrywcy.png?raw=true" alt="Logo">
 					</div>
-					<button class="hamburger-menu navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar">
-						<i class="fa fa-reorder"></i>
+					<button class="hamburger-menu navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar" id="menu-btn">
+						<div id="nav-icon1">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</div>
 					</button>
 					<nav class="navbar navbar-default collapse" id="navbar">
 						<ul class="nav navbar-nav">
@@ -439,7 +443,21 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
     }
 });
 			</script>
-			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#menu-btn').click(function(){
+						$('#nav-icon1').toggleClass('open');
+					});
+				});
+			</script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#about-btn, #mission-btn, #gallery-btn, #prices-btn, #contact-btn').click(function() {
+						$('#nav-icon1').toggleClass('open');
+					});
+				});
+			</script>
+
 			
 			
 		
