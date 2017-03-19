@@ -77,7 +77,7 @@ a {
   display: inline-block;
   align-content: center;
   -webkit-box-pack: center;
-  justify-content: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
   line-height: 30px;
@@ -93,7 +93,7 @@ a {
 .social .container .social-top a button:active {
   box-shadow: 0 0 10px #fff;
   -webkit-transform: scale(0.94);
-  transform: scale(0.94);
+          transform: scale(0.94);
 }
 
 .social .container .navigation {
@@ -129,9 +129,9 @@ a {
   height: 40px;
   width: 40px;
   border-radius: 3px;
-  border: 1px solid #888;
+  border: 1px solid #aaa;
   color: #fff;
-  background-color: #aaa;
+  background-color: #87b04a;
   outline: none;
   margin: 10px;
   font-size: 28px;
@@ -145,7 +145,7 @@ a {
   background-color: #ccc;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+          flex-direction: column;
   text-align: center;
   border: none;
   position: absolute;
@@ -187,7 +187,6 @@ a {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #eee;
   border-radius: 2px;
   opacity: 1;
   left: 0;
@@ -199,14 +198,17 @@ a {
 
 #nav-icon1 span:nth-child(1) {
   top: 0px;
+  background-color: #ef572c;
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 9px;
+  top: 10px;
+  background-color: #d03277;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 18px;
+  top: 20px;
+  background-color: #ef572c;
 }
 
 #nav-icon1.open span:nth-child(1) {
@@ -264,7 +266,7 @@ header {
 @media screen and (max-width: 1200px) {
   header {
     -webkit-box-pack: center;
-    justify-content: center;
+            justify-content: center;
   }
 }
 
@@ -276,14 +278,14 @@ header {
 
 header .navbar {
   -webkit-box-pack: justify;
-  justify-content: space-between;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 1200px) {
   header .navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column;
+            flex-direction: column;
     text-align: center;
     border: none;
   }
@@ -295,7 +297,7 @@ header .navbar .logo:hover {
 
 header .navbar .logo:active {
   -webkit-transform: scale(0.95);
-  transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 header .navbar .logo img {
@@ -321,10 +323,10 @@ header .navbar .navmenu ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  flex-direction: row;
+          flex-direction: row;
   width: 700px;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+          justify-content: space-between;
   align-content: center;
   padding: 0;
   margin-top: auto;
@@ -353,7 +355,7 @@ header .navbar .navmenu ul a:active {
 
 header .navbar .navmenu ul a:active li {
   -webkit-transform: translate(-1px -1px);
-  transform: translate(-1px -1px);
+          transform: translate(-1px -1px);
 }
 
 #about-btn:hover {
@@ -388,9 +390,9 @@ header .navbar .navmenu ul a:active li {
 
 .jumbotron .container {
   -webkit-box-pack: end;
-  justify-content: flex-end;
+          justify-content: flex-end;
   -webkit-box-align: start;
-  align-items: flex-start;
+          align-items: flex-start;
   height: 100%;
 }
 
@@ -409,7 +411,17 @@ header .navbar .navmenu ul a:active li {
 }
 
 /* Section about */
-.about div div h1 {
+.about div .aboutHeader {
+  height: 100px;
+  width: 350px;
+  background-color: #ef572c;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.about div .aboutHeader h1 {
+  margin: 0;
+  line-height: 100px;
   width: 100%;
 }
 
@@ -451,7 +463,17 @@ header .navbar .navmenu ul a:active li {
 }
 
 /* Mission section */
-.mission div div h1 {
+.mission div .missionHeader {
+  height: 100px;
+  width: 350px;
+  background-color: #97d4df;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.mission div .missionHeader h1 {
+  margin: 0;
+  line-height: 100px;
   width: 100%;
 }
 
@@ -503,17 +525,34 @@ header .navbar .navmenu ul a:active li {
   margin: 50px auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
 /*Pictures gallery*/
+.galleryHeader {
+  height: 100px;
+  width: 350px;
+  background-color: #d03277;
+  color: #fff;
+  border-radius: 10px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.galleryHeader h1 {
+  margin: 0;
+  line-height: 100px;
+  width: 100%;
+}
+
 .gallery {
   min-height: 40vw;
   width: 100%;
   line-height: 0;
   margin-top: 50px;
   margin-bottom: 50px;
+  /*for testing time*/
   opacity: 0.3;
 }
 
@@ -628,10 +667,23 @@ header .navbar .navmenu ul a:active li {
   margin-bottom: 100px;
 }
 
-.prices .container {
+.prices .pricesHeader {
   -webkit-box-pack: center;
           justify-content: center;
+  margin: 0 auto;
   margin-bottom: 50px;
+  height: 100px;
+  width: 350px;
+  background-color: #0c4d8a;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.prices .pricesHeader h1 {
+  margin: 0;
+  line-height: 100px;
+  width: 100%;
 }
 
 .prices .container-prices {
@@ -746,7 +798,7 @@ footer div .flex-row {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  flex-direction: row;
+          flex-direction: row;
   width: 100%;
   min-height: 200px;
 }
@@ -755,7 +807,7 @@ footer div .flex-row {
   footer div .flex-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -788,7 +840,7 @@ footer div .flex-row .left-col ul a {
 footer div .flex-row .middle-col {
   width: 50%;
   -webkit-box-pack: center;
-  justify-content: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -827,7 +879,7 @@ footer div .flex-row .right-col {
   width: 25%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  flex-direction: row;
+          flex-direction: row;
   justify-content: space-around;
   align-content: center;
   padding-top: 50px;
@@ -865,7 +917,7 @@ footer div .flex-row .right-col a button {
 footer div .flex-row .right-col a button:active {
   box-shadow: 0 0 10px #fff;
   -webkit-transform: scale(0.94);
-  transform: scale(0.94);
+          transform: scale(0.94);
 }
 
 @media screen and (max-width: 1200px) {

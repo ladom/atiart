@@ -41,8 +41,6 @@ a
 
 
 .container 
-	display: -webkit-box
-	display: -ms-flexbox
 	display: flex
 	max-width: 1200px
 	margin: 0 auto
@@ -80,10 +78,7 @@ a
 	
 				button
 					display: inline-block
-					-ms-flex-line-pack: center
 					align-content: center
-					-webkit-box-pack: center
-					-ms-flex-pack: center
 					justify-content: center
 					width: 40px
 					height: 40px
@@ -98,7 +93,6 @@ a
 					
 					&:active
 						box-shadow: 0 0 10px #fff
-						-webkit-transform: scale(0.94)
 						transform: scale(0.94)	
 						
 		.navigation
@@ -125,9 +119,9 @@ a
 				height: 40px
 				width: 40px
 				border-radius: 3px
-				border: 1px solid #888
+				border: 1px solid #aaa
 				color: #fff
-				background-color: #aaa
+				background-color: $contact
 				outline: none
 				margin: 10px
 				font-size: 28px
@@ -138,9 +132,6 @@ a
 #navbar
 	width: 100%
 	background-color: #ccc
-	-webkit-box-orient: vertical
-	-webkit-box-direction: normal
-	-ms-flex-direction: column
 	flex-direction: column
 	text-align: center
 	border: none
@@ -178,7 +169,6 @@ a
 		position: absolute
 		height: 5px
 		width: 100%
-		background: #eee
 		border-radius: 2px
 		opacity: 1
 		left: 0
@@ -187,12 +177,15 @@ a
 
 	span:nth-child(1)
 		top: 0px
+		background-color: $about
 
 	span:nth-child(2)
-		top: 9px
+		top: 10px
+		background-color: $gallery
 
 	span:nth-child(3)
-		top: 18px
+		top: 20px
+		background-color: $about
 
 #nav-icon1.open
 	span:nth-child(1)
@@ -238,22 +231,15 @@ header
 	z-index: 1
 	
 	@media screen and (max-width: $big)
-		-webkit-box-pack: center
-		-ms-flex-pack: center
 		justify-content: center
 		
 	@media screen and (max-width: $middle)
 		display: none
 	
 	.navbar
-		-webkit-box-pack: justify
-		-ms-flex-pack: justify
 		justify-content: space-between
 		
 		@media screen and (max-width: $big)
-			-webkit-box-orient: vertical
-			-webkit-box-direction: normal
-			-ms-flex-direction: column
 			flex-direction: column
 			text-align: center
 			border: none
@@ -264,38 +250,25 @@ header
 				box-shadow: 2px 2px 4px #006
 				
 			&:active
-				-webkit-transform: scale(0.95)
 				transform: scale(0.95)
 			
 			img
 				height: 100px
 	
 		.navmenu
-			display: -webkit-box
-			display: -ms-flexbox
 			display: flex
-			-ms-flex-line-pack: center
 			align-content: center
 			
 			@media screen and (max-width: $big)
 				width: 100%
 				margin: 10px auto
-				-ms-flex-pack: distribute
 				justify-content: space-around
 
 			ul
-				display: -webkit-box
-				display: -ms-flexbox
 				display: flex
-				-webkit-box-orient: horizontal
-				-webkit-box-direction: normal
-				-ms-flex-direction: row
 				flex-direction: row
 				width: 700px
-				-webkit-box-pack: justify
-				-ms-flex-pack: justify
 				justify-content: space-between
-				-ms-flex-line-pack: center
 				align-content: center
 				padding: 0
 				margin-top: auto
@@ -320,7 +293,6 @@ header
 						text-shadow: 0 0 1px #00a
 						
 					&:active li
-						-webkit-transform: translate(-1px -1px)
 						transform: translate(-1px -1px)
 
 #about-btn
@@ -358,11 +330,7 @@ header
 	background-position: bottom center
 
 	.container
-		-webkit-box-pack: end
-		-ms-flex-pack: end
 		justify-content: flex-end
-		-webkit-box-align: start
-		-ms-flex-align: start
 		align-items: flex-start
 		height: 100%
 		
@@ -384,9 +352,16 @@ header
 	
 	div
 	
-		div
+		.aboutHeader
+			height: 100px
+			width: 350px
+			background-color: $about
+			color: #fff
+			border-radius: 10px
 	
 			h1
+				margin: 0
+				line-height: 100px
 				width: 100%
 	.par3
 		display: inline-block
@@ -424,11 +399,18 @@ header
 	
 	div
 	
-		div
+		.missionHeader
+			height: 100px
+			width: 350px
+			background-color: $mission
+			color: #fff
+			border-radius: 10px
 	
 			h1
+				margin: 0
+				line-height: 100px
 				width: 100%
-			
+	
 		.par1
 			display: inline-block
 			max-width: 1200px
@@ -469,14 +451,24 @@ header
 	
 .about div:first-child, .mission div:first-child 
 	margin: 50px auto
-	-webkit-box-orient: vertical
-	-webkit-box-direction: normal
-	-ms-flex-direction: column
 	flex-direction: column
 	text-align: center
 
 
 /*Pictures gallery*/
+.galleryHeader
+	height: 100px
+	width: 350px
+	background-color: $gallery
+	color: #fff
+	border-radius: 10px
+	margin: 50px auto
+	text-align: center
+
+	h1
+		margin: 0
+		line-height: 100px
+		width: 100%
 
 .gallery
 	min-height: 40vw
@@ -484,6 +476,7 @@ header
 	line-height: 0
 	margin-top: 50px
 	margin-bottom: 50px
+	/*for testing time*/
 	opacity: 0.3
 	
 	@media screen and (max-width: $middle)
@@ -574,9 +567,22 @@ header
 	margin-top: 100px
 	margin-bottom: 100px
 	
-	.container
+	.pricesHeader
 		justify-content: center
+		margin: 0 auto
 		margin-bottom: 50px
+		height: 100px
+		width: 350px
+		background-color: $prices
+		color: #fff
+		border-radius: 10px
+		text-align: center
+
+		h1
+			margin: 0
+			line-height: 100px
+			width: 100%
+
 
 	.container-prices
 		max-width: 1200px
@@ -664,20 +670,12 @@ footer
 		margin-bottom: 0
 
 		.flex-row
-			display: -webkit-box
-			display: -ms-flexbox
 			display: flex
-			-webkit-box-orient: horizontal
-			-webkit-box-direction: normal
-			-ms-flex-direction: row
 			flex-direction: row
 			width: 100%
 			min-height: 200px
 			
 			@media screen and (max-width: $big)
-				-webkit-box-orient: vertical
-				-webkit-box-direction: normal
-				-ms-flex-direction: column
 				flex-direction: column
 				
 			@media screen and (max-width: $middle)
@@ -699,8 +697,6 @@ footer
 	
 			.middle-col
 				width: 50%
-				-webkit-box-pack: center
-				-ms-flex-pack: center
 				justify-content: center
 				
 				@media screen and (max-width: $big)
@@ -723,30 +719,20 @@ footer
 							width: 90vw
 	
 			.right-col
-				display: -webkit-box
-				display: -ms-flexbox
 				display: flex
 				height: 100%
 				width: 25%
-				-webkit-box-orient: horizontal
-				-webkit-box-direction: normal
-				-ms-flex-direction: row
 				flex-direction: row
-				-ms-flex-pack: distribute
 				justify-content: space-around
-				-ms-flex-line-pack: center
 				align-content: center
 				padding-top: 50px
 				
 				@media screen and (max-width: $big)
 					width: 100%
-					-ms-flex-pack: distribute
 					justify-content: space-around
 					padding: 30px 0
 	
 				a
-					display: -webkit-box
-					display: -ms-flexbox
 					display: flex
 					width: 40px
 					height: 40px
@@ -766,7 +752,6 @@ footer
 						
 						&:active
 							box-shadow: 0 0 10px #fff
-							-webkit-transform: scale(0.94)
 							transform: scale(0.94)
 							
 						@media screen and (max-width: $big)

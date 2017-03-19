@@ -1,7 +1,8 @@
 
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
+var gulp = require('gulp');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var watch = require('gulp-watch');
 
@@ -17,11 +18,16 @@ gulp.task('styles', function() {
 	.pipe(autoprefixer({
 		browsers: ["> 1%"]})
 	)
-	.pipe(gulp.dest('style.css'))
-	.pipe(browserSync.stream({
-		match: '**/*.css'})
-	)
+	.pipe(gulp.dest(''))
+	
 });
-gulp.task('default', function() {
-	gulp.watch('style.sass', ['styles']);
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "port: 8080"
+        }
+    });
+});
+gulp.task('default', ['styles', 'browser-sync'], function() {
+	gulp.watch('style.sass', ['styles']).on('change', reload);
 });
