@@ -24,6 +24,7 @@ $mint: #e8f1e4
 $big: 1200px
 $middle: 768px
 $small: 600px
+$xsmall: 400px
 
 body 
 	margin: 0 auto
@@ -56,7 +57,7 @@ a
 /*Social bar*/
 
 .social
-	min-height: 60px
+	min-height: 50px
 	width: 100%
 	background-color: #ccc
 	z-index: 2
@@ -81,10 +82,10 @@ a
 					display: inline-block
 					align-content: center
 					justify-content: center
-					width: 40px
-					height: 40px
-					line-height: 30px
-					font-size: 28px
+					width: 30px
+					height: 30px
+					line-height: 20px
+					font-size: 24px
 					border-radius: 5px
 					background-color: #fff
 					outline: none
@@ -104,7 +105,7 @@ a
 				width: 100%
 
 			.logo_small
-				height: 60px
+				height: 50px
 				float: left
 				display: none
 
@@ -113,7 +114,6 @@ a
 
 				img
 					height: 50px
-					margin-top: 5px
 					margin-left: 10px
 			
 			.hamburger-menu
@@ -124,7 +124,7 @@ a
 				color: #fff
 				background-color: $contact
 				outline: none
-				margin: 10px
+				margin: 5px
 				font-size: 28px
 				line-height: 30px
 				float: right
@@ -137,7 +137,7 @@ a
 	text-align: center
 	border: none
 	position: absolute
-	top: 60px
+	top: 50px
 	left: 0
 	margin-bottom: 0
 	
@@ -359,6 +359,9 @@ header
 			background-color: $about
 			color: #fff
 			border-radius: 10px
+
+			@media (max-width: $xsmall)
+				width: 100vw
 	
 			h1
 				margin: 0
@@ -406,6 +409,9 @@ header
 			background-color: $mission
 			color: #fff
 			border-radius: 10px
+
+			@media (max-width: $xsmall)
+				width: 100vw
 	
 			h1
 				margin: 0
@@ -457,6 +463,9 @@ header
 
 
 /*Pictures gallery*/
+
+@import modal
+
 .galleryHeader
 	height: 100px
 	width: 350px
@@ -465,6 +474,9 @@ header
 	border-radius: 10px
 	margin: 50px auto
 	text-align: center
+
+	@media (max-width: $xsmall)
+		width: 100vw
 
 	h1
 		margin: 0
@@ -574,6 +586,9 @@ header
 		color: #fff
 		border-radius: 10px
 		text-align: center
+
+		@media (max-width: $xsmall)
+			width: 100vw
 
 		h1
 			margin: 0
