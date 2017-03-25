@@ -228,7 +228,7 @@ a
 header
 	background-color: #eee
 	width: 100%
-	min-height: 100px
+	min-height: 60px
 	z-index: 1
 	
 	@media screen and (max-width: $big)
@@ -246,6 +246,7 @@ header
 			border: none
 
 		.logo
+			height: 60px
 	
 			&:hover
 				box-shadow: 2px 2px 4px #006
@@ -254,7 +255,8 @@ header
 				transform: scale(0.95)
 			
 			img
-				height: 100px
+				height: 50px
+				margin: 5px 15px
 	
 		.navmenu
 			display: flex
@@ -276,14 +278,14 @@ header
 				margin-bottom: auto
 				
 				a
-					width: 120px
-					height: 80px
+					width: 130px
+					height: 50px
 					list-style-type: none
 					font-size: 18px
 					text-transform: uppercase
 					color: #fff
 					text-align: center
-					line-height: 80px
+					line-height: 50px
 					background-color: #ffb216
 					border-radius: 5px
 					box-shadow: 1px 1px 3px #006
@@ -352,20 +354,23 @@ header
 .about
 	
 	div
+
+		@media (max-width: $xsmall)
+			width: 100vw
 	
 		.aboutHeader
-			height: 100px
-			width: 350px
+			height: 60px
+			width: 250px
 			background-color: $about
 			color: #fff
-			border-radius: 10px
+			border-radius: 5px
 
 			@media (max-width: $xsmall)
-				width: 100vw
+				width: 100%
 	
 			h1
 				margin: 0
-				line-height: 100px
+				line-height: 60px
 				width: 100%
 	.par3
 		display: inline-block
@@ -377,6 +382,13 @@ header
 			width: 200px
 			float: left
 			margin-right: 20px
+			
+			@media (max-width: $xsmall)
+				width: 90vw
+				float: none
+				margin-right: 0
+				margin: 0
+
 		
 		p
 			margin: 0
@@ -402,20 +414,22 @@ header
 .mission
 	
 	div
+		@media (max-width: $xsmall)
+			width: 100vw
 	
 		.missionHeader
-			height: 100px
-			width: 350px
+			height: 60px
+			width: 250px
 			background-color: $mission
 			color: #fff
-			border-radius: 10px
+			border-radius: 5px
 
 			@media (max-width: $xsmall)
-				width: 100vw
+				width: 100%
 	
 			h1
 				margin: 0
-				line-height: 100px
+				line-height: 60px
 				width: 100%
 	
 		.par1
@@ -467,20 +481,20 @@ header
 @import modal
 
 .galleryHeader
-	height: 100px
-	width: 350px
+	height: 60px
+	width: 250px
 	background-color: $gallery
 	color: #fff
-	border-radius: 10px
+	border-radius: 5px
 	margin: 50px auto
 	text-align: center
 
 	@media (max-width: $xsmall)
-		width: 100vw
+		width: 100%
 
 	h1
 		margin: 0
-		line-height: 100px
+		line-height: 60px
 		width: 100%
 
 .gallery
@@ -580,11 +594,11 @@ header
 		justify-content: center
 		margin: 0 auto
 		margin-bottom: 50px
-		height: 100px
-		width: 350px
+		height: 60px
+		width: 250px
 		background-color: $prices
 		color: #fff
-		border-radius: 10px
+		border-radius: 5px
 		text-align: center
 
 		@media (max-width: $xsmall)
@@ -592,7 +606,7 @@ header
 
 		h1
 			margin: 0
-			line-height: 100px
+			line-height: 60px
 			width: 100%
 
 

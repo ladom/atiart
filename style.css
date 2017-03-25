@@ -185,7 +185,7 @@ a {
 header {
   background-color: #eee;
   width: 100%;
-  min-height: 100px;
+  min-height: 60px;
   z-index: 1; }
   @media screen and (max-width: 1200px) {
     header {
@@ -200,12 +200,15 @@ header {
         flex-direction: column;
         text-align: center;
         border: none; } }
-    header .navbar .logo:hover {
-      box-shadow: 2px 2px 4px #006; }
-    header .navbar .logo:active {
-      transform: scale(0.95); }
-    header .navbar .logo img {
-      height: 100px; }
+    header .navbar .logo {
+      height: 60px; }
+      header .navbar .logo:hover {
+        box-shadow: 2px 2px 4px #006; }
+      header .navbar .logo:active {
+        transform: scale(0.95); }
+      header .navbar .logo img {
+        height: 50px;
+        margin: 5px 15px; }
     header .navbar .navmenu {
       display: flex;
       align-content: center; }
@@ -224,14 +227,14 @@ header {
         margin-top: auto;
         margin-bottom: auto; }
         header .navbar .navmenu ul a {
-          width: 120px;
-          height: 80px;
+          width: 130px;
+          height: 50px;
           list-style-type: none;
           font-size: 18px;
           text-transform: uppercase;
           color: #fff;
           text-align: center;
-          line-height: 80px;
+          line-height: 50px;
           background-color: #ffb216;
           border-radius: 5px;
           box-shadow: 1px 1px 3px #006; }
@@ -281,18 +284,21 @@ header {
         text-shadow: 2px 2px 5px #555; }
 
 /* Section about */
+@media (max-width: 400px) {
+  .about div {
+    width: 100vw; } }
 .about div .aboutHeader {
-  height: 100px;
-  width: 350px;
+  height: 60px;
+  width: 250px;
   background-color: #ef572c;
   color: #fff;
-  border-radius: 10px; }
+  border-radius: 5px; }
   @media (max-width: 400px) {
     .about div .aboutHeader {
-      width: 100vw; } }
+      width: 100%; } }
   .about div .aboutHeader h1 {
     margin: 0;
-    line-height: 100px;
+    line-height: 60px;
     width: 100%; }
 .about .par3 {
   display: inline-block;
@@ -303,6 +309,12 @@ header {
     width: 200px;
     float: left;
     margin-right: 20px; }
+    @media (max-width: 400px) {
+      .about .par3 img {
+        width: 90vw;
+        float: none;
+        margin-right: 0;
+        margin: 0; } }
   .about .par3 p {
     margin: 0;
     font-size: 20px;
@@ -319,18 +331,21 @@ header {
       display: inline; } }
 
 /* Mission section */
+@media (max-width: 400px) {
+  .mission div {
+    width: 100vw; } }
 .mission div .missionHeader {
-  height: 100px;
-  width: 350px;
+  height: 60px;
+  width: 250px;
   background-color: #97d4df;
   color: #fff;
-  border-radius: 10px; }
+  border-radius: 5px; }
   @media (max-width: 400px) {
     .mission div .missionHeader {
-      width: 100vw; } }
+      width: 100%; } }
   .mission div .missionHeader h1 {
     margin: 0;
-    line-height: 100px;
+    line-height: 60px;
     width: 100%; }
 .mission div .par1 {
   display: inline-block;
@@ -437,19 +452,19 @@ header {
       border-radius: 3px 0 0 3px; }
 
 .galleryHeader {
-  height: 100px;
-  width: 350px;
+  height: 60px;
+  width: 250px;
   background-color: #d03277;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 50px auto;
   text-align: center; }
   @media (max-width: 400px) {
     .galleryHeader {
-      width: 100vw; } }
+      width: 100%; } }
   .galleryHeader h1 {
     margin: 0;
-    line-height: 100px;
+    line-height: 60px;
     width: 100%; }
 
 .gallery {
@@ -538,18 +553,18 @@ header {
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 50px;
-    height: 100px;
-    width: 350px;
+    height: 60px;
+    width: 250px;
     background-color: #0c4d8a;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center; }
     @media (max-width: 400px) {
       .prices .pricesHeader {
         width: 100vw; } }
     .prices .pricesHeader h1 {
       margin: 0;
-      line-height: 100px;
+      line-height: 60px;
       width: 100%; }
   .prices .container-prices {
     max-width: 1200px;
