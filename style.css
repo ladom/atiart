@@ -10,7 +10,7 @@
 /*Breakpoints */
 body {
   margin: 0 auto;
-  background-image: url(https://github.com/ladom/atiart/blob/master/bgnotes.png?raw=true);
+  background-color: #ffe;
   background-size: cover;
   background-repeat: repeat-y;
   font-family: "Lato";
@@ -61,7 +61,7 @@ a {
         height: 40px;
         line-height: 30px;
         font-size: 28px;
-        border-radius: 20px;
+        border-radius: 5px;
         background-color: #fff;
         outline: none;
         margin: 10px;
@@ -384,9 +384,7 @@ header {
   width: 100%;
   line-height: 0;
   margin-top: 50px;
-  margin-bottom: 50px;
-  /*for testing time */
-  opacity: 0.3; }
+  margin-bottom: 50px; }
   @media screen and (max-width: 768px) {
     .gallery {
       min-height: 100vw; } }
@@ -441,9 +439,7 @@ header {
           cursor: pointer;
           font-size: 24px;
           line-height: 30px;
-          outline: none;
-          /* For testing time */
-          display: none; }
+          outline: none; }
           @media screen and (max-width: 768px) {
             .gallery .photo .cover a .photo-btn {
               width: 60px;
@@ -536,7 +532,7 @@ header {
   background-color: #ef572c; }
 
 .price {
-  background-color: #0c4d8a; }
+  background-color: #97d4df; }
 
 .time1 {
   background-color: #87b04a; }
@@ -613,7 +609,7 @@ footer {
             text-align: center;
             line-height: 30px;
             outline: none;
-            border-radius: 50%;
+            border-radius: 5px;
             font-size: 24px;
             background-color: #fff;
             margin: 10px auto;
