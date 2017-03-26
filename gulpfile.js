@@ -10,7 +10,7 @@ gulp.task('serve', ['sass'], function() {
 		server: "./"
 	});
 
-	gulp.watch("style.sass", ['sass']);
+	gulp.watch("*.sass", ['sass']);
 	gulp.watch("index.html").on('change', browserSync.reload);
 });
 
@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 		})
 		)
 		.pipe(autoprefixer({
-			browsers: ["> 0.5%"]
+			browsers: ["> 5%"]
 		})
 		)
 		.pipe(gulp.dest("./"))

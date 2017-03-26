@@ -6,25 +6,8 @@
 	margin: 0
 	padding: 0
 	border: none
-
-/* Colors */
-
-$facebook: #3b5998
-$pinterest: #bd081c
-$instagram: #eb4839
-$about: #ef572c
-$mission: #97d4df
-$gallery: #d03277
-$prices: #0c4d8a
-$contact: #87b04a
-$mint: #e8f1e4
-	
-/*Breakpoints*/
-
-$big: 1200px
-$middle: 768px
-$small: 600px
-$xsmall: 400px
+@import colors	
+@import breakpoints
 
 body 
 	margin: 0 auto
@@ -326,12 +309,13 @@ header
 /*Jumbotron*/
 
 .jumbotron
-	width: 100%
+	width: 100vw
 	height: 80vh
 	background-image: url(https://github.com/ladom/atiart/blob/master/bg_new.jpg?raw=true)
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: left center
+	padding: 0
 
 	.container
 		justify-content: flex-end
@@ -341,14 +325,21 @@ header
 		.slogan
 			background-color: rgba(100, 100, 100, 0.5)
 			border-radius: 5px
-			margin-top: 180px
+			margin-top: 25%
 
+			@media (max-width: $small)
+				width: 100%
+		
 			h1
 				padding: 20px
 				text-transform: uppercase
 				color: #fff
 				text-align: center
 				text-shadow: 2px 2px 5px #555
+
+				@media (max-width: $small)
+					padding: 10px
+					font-size: 24px
 
 /* Section about */
 
@@ -489,15 +480,19 @@ header
 	border-radius: 5px
 	margin: 50px auto
 	text-align: center
+	padding-right: 15px
+	padding-left: 15px
 
 	@media (max-width: $xsmall)
-		width: 100%
-
+		width: auto
+		margin-right: 15px
+		margin-left: 15px
+	
 	h1
 		margin: 0
 		line-height: 60px
 		width: 100%
-
+			
 .gallery
 	min-height: 40vw
 	width: 100%
@@ -603,7 +598,9 @@ header
 		text-align: center
 
 		@media (max-width: $xsmall)
-			width: 100vw
+			width: auto
+			margin-right: 15px
+			margin-left: 15px
 
 		h1
 			margin: 0
@@ -642,11 +639,11 @@ header
 				
 					div
 						
-						height: 150px
+						height: 100px
 						width: 200px
 						margin: 20px auto
 						color: #fff
-						border-radius: 10px
+						border-radius: 5px
 						box-shadow: 2px 2px 5px #555
 						
 						@media screen and (max-width: $small)
@@ -655,7 +652,7 @@ header
 						p
 							font-size: 50px
 							text-align: center
-							line-height: 150px
+							line-height: 100px
 							text-shadow: 2px 2px 3px #555
 							
 							@media screen and (max-width: $small)
