@@ -1,0 +1,344 @@
+.testowy
+	min-height: 1000px
+
+@import _colors
+@import _breakpoints
+
+footer
+	background-color: #eee
+
+	.container
+		margin-bottom: 0
+
+		.footer-content
+			width: 100%
+
+			.footer-left, .footer-right
+				padding: 10px 0
+				@media (max-width: $small)
+					float: none
+
+			.footer-left
+				
+				.footer-header
+					width: 250px
+					height: 60px
+					background-color: $contact
+					border-radius: 5px
+					margin: 0 auto
+
+				h3
+					color: #fff
+					text-align: center
+					line-height: 60px
+					margin: 0
+
+			.footer-right
+				text-align: center
+
+				button
+					width: 40px
+					height: 40px
+					text-align: center
+					line-height: 30px
+					outline: none
+					border-radius: 5px
+					font-size: 24px
+					background-color: #fff
+					margin: 12.5px
+					border: 1px solid #aaa
+					box-shadow: 0 0 2px #00b
+					
+					&:active
+						box-shadow: 0 0 10px #fff
+						transform: scale(0.94)
+
+				button:first-of-type
+					margin-left: 20px
+
+#facebook
+
+	&:hover
+		background-color: $facebook
+	
+	i
+		color: $facebook
+		
+#facebook:hover i
+	color: #fff
+			
+
+#instagram
+	
+	&:hover
+		background-color: $instagram
+	
+	i
+		color: $instagram
+		
+#instagram:hover i
+	color: #fff
+
+#pinterest
+
+	&:hover
+		background-color: $pinterest
+	
+	i
+		color: $pinterest
+		
+#pinterest:hover i
+	color: #fff
+
+#address
+
+	&:hover
+		background-color: $address
+	
+	i
+		color: $address
+		
+#address:hover i
+	color: #fff
+
+#phone
+
+	&:hover
+		background-color: $phone
+	
+	i
+		color: $phone
+		
+#phone:hover i
+	color: #fff
+
+#googlemap
+
+	&:hover
+		background-color: $googlemap
+	
+	i
+		color: $googlemap
+		
+#googlemap:hover i
+	color: #fff
+
+#mail
+
+	&:hover
+		background-color: $mail
+	
+	i
+		color: $mail
+		
+#mail:hover i
+	color: #fff
+
+.tooltip > .tooltip-inner
+	background-color: $menu
+	color: #006
+
+.tooltip.top > .tooltip-arrow
+	border-top-color: $menu
+
+.footerInvisible
+	width: 100vw
+	min-height: 50vh
+	margin: 0 auto
+	background-color: #fff
+	color: #006
+	border-radius: 5px
+	padding: 50px 50px
+	border: 1px solid #006
+	position: relative
+	display: none
+
+	@media (max-width: $small)
+		padding: 50px 10px
+
+	i
+		z-index: 18
+		font-size: 20px
+		color: $about
+		float: right
+		margin: 0 15px
+		position: absolute
+		top: 20px
+		right: 20px
+
+		&:hover
+			text-shadow: 1px 1px 3px #555
+
+		&:active
+			transform: scale(0.9)
+
+	.footer__invisible--content
+		width: 90%
+		max-width: 768px
+		height: 90%
+		background-color: #eef
+		border-radius: 5px
+		box-shadow: 2px 2px 4px #555
+		margin: 0px auto
+		padding: 30px
+
+		@media (max-width: $small)
+			width: 100%
+			padding: 30px 5px
+
+		.footer__invisible--header
+			width: 250px
+			color: #fff
+			padding: 15px
+			border-radius: 5px
+
+			@media (max-width: $small)
+				margin: 0 auto
+				width: 80%
+
+			h3
+				text-align: center
+				margin: 0 auto
+
+				@media (max-width: $small)
+					font-size: 22px
+
+		p
+			font-size: 18px
+
+			@media (max-width: $small)
+				font-size: 16px
+
+		p:first-of-type
+			text-align: center
+
+		h4
+			text-align: center
+			font-size: 22px
+
+			@media (max-width: $small)
+				font-size: 18px
+
+		.footer__invisible--photoColumn
+			text-align: center
+
+			img
+				max-width: 100%
+				height: auto
+
+				@media (max-width: $middle)
+					max-width: 40%
+					margin-top: 15px
+
+				@media (max-width: $small)
+					max-width: 200px
+					margin-top: 15px
+					display: none
+
+.footer-invisible2
+	
+	.phoneColumn
+		text-align: center
+		
+		h4
+			margin: 40px auto
+
+		button
+			padding: 15px
+			font-size: 22px
+			background-color: #0065ff
+			color: #fff
+			margin: 0 auto
+			border-radius: 5px
+			outline: none
+
+			&:hover
+				transform: scale(1.2)
+
+			&:active
+				transform: scale(1.1)
+				box-shadow: 2px 2px 4px #555
+
+			a
+				text-decoration: none
+				color: #fff
+
+.footer-invisible3
+	
+	#formularz
+		width: 100%
+		margin: 0 auto
+		padding: 20px 20px 0 20px
+		text-align: center
+
+		label
+			display: block
+			margin-bottom: 5px
+
+		textarea, input
+			padding: 5px
+			border-radius: 3px
+			border: 1px solid $mail
+			margin-bottom: 20px
+			width: 100%
+
+		#submit
+			width: 150px
+			cursor: pointer
+			background-color: $contact
+			color: #fff
+			margin: 0 auto
+			outline: none
+
+			@media (max-width: $xsmall)
+				margin-bottom: 5px
+
+
+		#reset
+			width: 150px
+			cursor: pointer
+			margin: 0 auto
+			outline: none
+			border: 1px solid #ddd
+
+.footer-invisible4
+
+	.mapColumn
+		text-align: center
+
+		iframe
+			width: 400px
+			height: 300px
+			border: 2px solid $googlemap
+			margin-top: 10px
+
+			@media (max-width: $small)
+				width: 90%
+
+	p
+		text-align: justify
+		font-size: 14px
+
+#contact1
+	background-color: $address
+
+#contact2
+	background-color: $phone
+
+#contact3
+	background-color: $mail
+
+#contact4
+	background-color: $googlemap
+
+
+
+#img1
+	border: 2px solid $address
+
+#img2
+	border: 2px solid $phone
+
+
+
+

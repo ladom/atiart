@@ -132,7 +132,7 @@ a
 		width: 90vw
 		text-align: center
 		font-size: 18px
-		background-color: #ffb216
+		background-color: $menu
 		color: #fff
 		margin-bottom: 15px
 		border-radius: 5px
@@ -185,7 +185,7 @@ a
 		top: 10px
 		transform: rotate(-135deg)
 
-#facebook 
+#facebook
 	color: $facebook
 	
 	&:hover
@@ -270,7 +270,7 @@ header
 					color: #fff
 					text-align: center
 					line-height: 50px
-					background-color: #ffb216
+					background-color: $menu
 					border-radius: 5px
 					box-shadow: 1px 1px 3px #006
 					
@@ -337,7 +337,7 @@ header
 				text-align: center
 				text-shadow: 2px 2px 5px #555
 
-				@media (max-width: $small)
+				@media (max-width: $middle)
 					padding: 10px
 					font-size: 24px
 
@@ -687,96 +687,4 @@ header
 	
 /*Footer*/
 
-footer
-	background-color: #eee
-
-	div
-		margin-bottom: 0
-
-		.flex-row
-			display: flex
-			flex-direction: row
-			width: 100%
-			min-height: 200px
-			
-			@media screen and (max-width: $big)
-				flex-direction: column
-				
-			@media screen and (max-width: $middle)
-				margin-bottom: 0
-				padding-bottom: 30px
-
-			.left-col
-				width: 25%
-				
-				@media screen and (max-width: $big)
-					width: 100%
-	
-				ul
-					list-style-type: none
-					padding-left: 0
-	
-					a
-						color: inherit
-	
-			.middle-col
-				width: 50%
-				justify-content: center
-				
-				@media screen and (max-width: $big)
-					width: 100%
-	
-				.map
-				
-					text-align: center
-					
-					iframe
-						width: 500px
-						height: 300px
-						border: 2px solid #ccc
-						margin-bottom: 20px
-						
-						@media screen and (max-width: $big)
-							margin: 30px auto
-							
-						@media screen and (max-width: $small)
-							width: 90vw
-	
-			.right-col
-				display: flex
-				height: 100%
-				width: 25%
-				flex-direction: row
-				justify-content: space-around
-				align-content: center
-				padding-top: 50px
-				
-				@media screen and (max-width: $big)
-					width: 100%
-					justify-content: space-around
-					padding: 30px 0
-	
-				a
-					display: flex
-					width: 40px
-					height: 40px
-		
-					button
-						width: 40px
-						height: 40px
-						text-align: center
-						line-height: 30px
-						outline: none
-						border-radius: 5px
-						font-size: 24px
-						background-color: #fff
-						margin: 10px auto
-						border: 1px solid #aaa
-						box-shadow: 0 0 2px #00b
-						
-						&:active
-							box-shadow: 0 0 10px #fff
-							transform: scale(0.94)
-							
-						@media screen and (max-width: $big)
-							margin: 0 auto
+@import footer
