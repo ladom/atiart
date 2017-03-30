@@ -48,7 +48,7 @@ a {
   min-height: 50px;
   width: 100%;
   background-color: #ccc;
-  z-index: 2;
+  z-index: 19;
 }
 
 @media screen and (max-width: 767px) {
@@ -255,12 +255,29 @@ a {
   background-color: #bd081c;
 }
 
+.fa-wordpress {
+  color: #0087be;
+}
+
+#wordpress {
+  color: #0087be;
+}
+
+#wordpress:hover {
+  background-color: #0087be;
+}
+
+#wordpress:hover i {
+  color: #fff;
+  background-color: transparent;
+}
+
 /*Navigation bar*/
 header {
   background-color: #eee;
   width: 100%;
   min-height: 60px;
-  z-index: 1;
+  z-index: 23;
 }
 
 @media screen and (max-width: 1199px) {
@@ -938,6 +955,17 @@ header .navbar .navmenu ul a:active li {
   color: #333;
 }
 
+.kid-pict, .teen-pict {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.kid-pict img, .teen-pict img {
+  max-width: 100%;
+  height: auto;
+}
+
 .time {
   background-color: #ef572c;
 }
@@ -961,6 +989,10 @@ header .navbar .navmenu ul a:active li {
 
 /* Colors */
 /*Breakpoints*/
+.error {
+  color: red;
+}
+
 footer {
   background-color: #eee;
 }
@@ -971,6 +1003,7 @@ footer .container {
 
 footer .container .footer-content {
   width: 100%;
+  margin: 0 auto;
 }
 
 footer .container .footer-content .footer-left, footer .container .footer-content .footer-right {
@@ -1022,8 +1055,10 @@ footer .container .footer-content .footer-right button:active {
           transform: scale(0.94);
 }
 
-footer .container .footer-content .footer-right button:first-of-type {
-  margin-left: 20px;
+@media (min-width: 992px) {
+  footer .container .footer-content .footer-right button:first-of-type {
+    margin-left: 20px;
+  }
 }
 
 #facebook:hover {
@@ -1291,17 +1326,28 @@ footer .container .footer-content .footer-right button:first-of-type {
   text-align: center;
 }
 
+.footer-invisible3 #formularz p {
+  font-size: 10px;
+  text-align: left;
+}
+
 .footer-invisible3 #formularz label {
   display: block;
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .footer-invisible3 #formularz textarea, .footer-invisible3 #formularz input {
   padding: 5px;
   border-radius: 3px;
   border: 1px solid #ffbc00;
-  margin-bottom: 20px;
-  width: 100%;
+  width: 80%;
+}
+
+.footer-invisible3 #formularz textarea:focus, .footer-invisible3 #formularz input:focus {
+  border: 3px solid #ffbc00;
+  box-shadow: 1px 1px 2px #555;
+  outline: none;
 }
 
 .footer-invisible3 #formularz #submit {
@@ -1345,8 +1391,7 @@ footer .container .footer-content .footer-right button:first-of-type {
 }
 
 .footer-invisible4 p {
-  text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #contact1 {
@@ -1371,4 +1416,54 @@ footer .container .footer-content .footer-right button:first-of-type {
 
 #img2 {
   border: 2px solid #800080;
+}
+
+/* Colors */
+/*Breakpoints*/
+.sendMail {
+  display: block;
+  text-align: center;
+}
+
+.sendMail img {
+  max-width: 600px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.sendMail h1 {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .sendMail h1 {
+    font-size: 22px;
+  }
+}
+
+.sendMail a {
+  text-decoration: none;
+}
+
+.sendMail a button {
+  width: 270px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: #ef572c;
+  margin-top: 50px;
+}
+
+.sendMail a button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sendMail a button:active {
+  box-shadow: 0 0 10px #fff;
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
 }

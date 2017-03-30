@@ -28,4 +28,17 @@ $(document).ready(function() {
 	});
 });
 
-$("contact").validate();
+$("#formContact").validate();
+
+$('#formContact').submit(function() {
+	if (!attributeSupported("required") || ($.browser.safari)) {
+
+		$("#formContact [required]").each(function(index) {
+			if (!$(this).val()) {
+			alert("Proszę wypełnić wszystkie pola!");
+			return false;
+			}
+		});
+	}
+	return false;
+});

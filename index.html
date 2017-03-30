@@ -35,6 +35,11 @@
 							<i class="fa fa-pinterest" title="Pinterest"></i>
 						</button>
 					</a>
+					<a href="https://atiartblog.wordpress.com" target="_blank">
+						<button id="wordpress">
+							<i class="fa fa-wordpress" title="Wordpress"></i>
+						</button>
+					</a>
 				</div>
 				<div class="navigation">
 					<div class="logo_small">
@@ -333,8 +338,12 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 				<h1 class="prices-title">Cennik</h1>
 			</div>
 			<div class="container-prices row">
-				<div class="package col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<h3>Dla dzieci</h3><h3>Muzyczny Detektyw</h3>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 package">
+					<h3>Dla dzieci</h3>
+					<h3>Muzyczny Detektyw</h3>
+					<div class="kid-pict">
+						<img src="pictures/kid.jpg">
+					</div>
 					<div class="price-row row">
 						<div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
 							<div class="time">
@@ -359,8 +368,12 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 						</p>
 					</div>
 				</div>
-				<div class="package col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<h3>Dla młodzieży i dorosłych</h3><h3>Tropiciel Melodii</h3>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 package">
+					<h3>Dla młodzieży i dorosłych</h3>
+					<h3>Tropiciel Melodii</h3>
+					<div class="teen-pict">
+						<img src="pictures/teen.jpg">
+					</div>
 					<div class="price-row row">
 						<div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
 							<div class="time1">
@@ -401,10 +414,10 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 						<h4>AtiArt</h4>
 						<p>Nauka gry na skrzypcach<br>Wrocław, Miękinia, Środa Śląska</p>
 						<h4>Joanna Tulińska-Ładomirska</h4>
-						<p>REGON:<br>NIP:<br>tel: 668 499 130<br>e-mail: <a href="mailto: muzyczniodkrywcy@atiart.pl">muzyczniodkrywcy@atiart.pl</a></p>
+						<p>NIP: 886-28-47-388<br>tel: 668 499 130<br>e-mail: <a href="mailto: muzyczniodkrywcy@atiart.pl">muzyczniodkrywcy@atiart.pl</a></p>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer__invisible--photoColumn">
-						<img src="pictures/contact_photo.jpg" id="img1">
+						<img src="https://github.com/ladom/atiart/blob/master/pictures/contact_photo.jpg?raw=true" id="img1">
 					</div>
 				</div>
 			</div>
@@ -424,7 +437,7 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 						</button>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer__invisible--photoColumn">
-						<img src="pictures/phone_photo.jpg" id="img2">
+						<img src="https://github.com/ladom/atiart/blob/master/pictures/phone_photo.jpg?raw=true" id="img2">
 					</div>
 				</div>
 			</div>
@@ -436,13 +449,13 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 					<h3>Formularz kontaktowy</h3>
 				</div>
 				<div class="contactForm" id="formularz">
-					<form method="post" action="kontakt.php">
+					<form name="contact" method="post" action="kontakt.php" id="formContact">
 						<label>Imię i nazwisko:</label>
-						<input name="name" placeholder="Jan Kowalski"><br>
+						<input name="name" placeholder="Jan Kowalski" type="text" minlength="3" required/><br>
 						<label>E-mail</label>
-						<input name="email" type="email" placeholder="email@adres.mail"><br>
+						<input name="email" type="email" placeholder="email@adres.mail" required/><br>
 						<label>Wiadomość</label>
-						<textarea name="message" placeholder="Tutaj napisz wiadomość do Muzycznych Odkrywców"></textarea><br>
+						<textarea name="message" placeholder="Tutaj napisz wiadomość do Muzycznych Odkrywców" type="text" required/></textarea><br>
 						<input type="submit" name="submit" id="submit" value="Wyślij">
 						<input type="reset" name="reset" id="reset" value="Anuluj">
 					</form>
@@ -461,7 +474,8 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<h4>Muzyczni Odkrywcy</h4>
-						<p>Nauka gry na skrzypcach<br>Zajęcia mogą odbywać się w zachodniej części Wrocławia (Leśnica, Złotniki, Żerniki, Stabłowice)<br>oraz<br>na terenie gminy Miękinia (Wilkszyn, Lutynia, Pisarzowice)</p>
+						<p>Nauka gry na skrzypcach</p>
+						<p>Zajęcia mogą odbywać się w zachodniej części Wrocławia (Leśnica, Złotniki, Żerniki, Stabłowice)<br>oraz<br>na terenie gminy Miękinia (Wilkszyn, Lutynia, Pisarzowice)</p>
 					</div>
 				</div>
 			</div>
@@ -469,12 +483,12 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 		<footer id="contact">
 			<div class="container">
 				<div class="row footer-content">
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-left">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-left">
 						<div class="footer-header">
 							<h3>Kontakt</h3>
 						</div>
 					</div>
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 footer-right">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-right">
 						<button id="address" title="Dane kontaktowe">
 							<i class="fa fa-address-card"></i>
 						</button>
@@ -503,91 +517,26 @@ Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu 
 								<i class="fa fa-pinterest"></i>
 							</a>
 						</button>
+						<button id="wordpress" title="Wordpress">
+							<a href="https://atiartblog.wordpress.com" target="_blank">
+								<i class="fa fa-wordpress"></i>
+							</a>
+						</button>
 					</div>
 				</div>
 			</div>
 		</footer>
 		
+		<!-- Scripts -->
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-			    var menu = $('#menu');
-			    var menuPositionTop = menu.position().top;
-
-    
-					$(window).scroll(function () {
-					if(parseInt($(window).scrollTop()) > menuPositionTop) {
-           
-					if (menu.hasClass('static')) { 
-                menu.removeClass('static').addClass('fixed'); 
-							}
-					}
-		        
-					else {
-		            
-						if (menu.hasClass('fixed')) {
-		                menu.removeClass('fixed').addClass('static');
-		            }
-		        }
-		    });
-		    
-		});
-		</script>
-		<script>
-			
-    		$(document).ready(function() { 
- 				var nav = document.getElementById("menu");
-			var high = nav.offsetHeight;
-				$('a[href^="#"]').on('click', function(event) {
-	
-					var target = $( $(this).attr('href') );
-	
-					if( target.length ) {
-						event.preventDefault();
-						$('html, body').animate({
-							scrollTop: target.offset().top - high
-						}, 2000);
-					}
-				});
- 
-			});
-			</script>
-			
-			<script type="text/javascript">
-			$("#more-btn").click(function(e){
-			    if($(this).hasClass('detal2')){
-			        $(this).removeClass('detal2').addClass('detal');
-			        $(this).text('(mniej)');
-			    }
-    else {
-        
-        $(this).removeClass('detal').addClass('detal2');
-        $(this).text('(więcej)');
-        
-    }
-});
-			</script>
-			<script type="text/javascript">
-				$(document).ready(function(){
-					$('#menu-btn').click(function(){
-						$('#nav-icon1').toggleClass('open');
-					});
-				});
-			</script>
-			<script type="text/javascript">
-				$(document).ready(function() {
-					$('#about-btn, #mission-btn, #gallery-btn, #prices-btn, #contact-btn').click(function() {
-						$('#nav-icon1').toggleClass('open');
-					});
-				});
-			</script>
-			<script src="modalScript.js"></script>
-			<script src="footer.js"></script>
-			
-		
-		
-		
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/messages_pl.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/modalScript.js"></script>
+		<script src="js/footer.js"></script>
+				
 	</body>
 	
 </html>
