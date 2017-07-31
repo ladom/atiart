@@ -1,542 +1,567 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-	<head>
-		<meta charset="UTF-8">
-		<title>Muzyczni Odkrywcy</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="Shortcut icon" href="https://github.com/ladom/atiart/blob/master/odkrywcy_icon.ico?raw=true">
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	
-	<body>
-	
-		<!--Social bar-->
-		
-		<section class="social">
-			<div class="container">
-				<div class="social-top">
-					<a href="https://www.facebook.com/muzyczniodkrywcy" target="_blank">
-						<button id="facebook">
+<head>
+    <meta charset="UTF-8">
+    <title>Muzyczni Odkrywcy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Shortcut icon" href="https://github.com/ladom/atiart/blob/master/odkrywcy_icon.ico?raw=true">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!--Social bar-->
+
+    <section class="social">
+        <div class="container">
+            <div class="social-top">
+                <a href="https://www.facebook.com/muzyczniodkrywcy" target="_blank">
+                    <button id="facebook">
 							<i class="fa fa-facebook" title="Facebook"></i>
 						</button>
-					</a>
-					<a href="https://www.instagram.com/muzyczniodkrywcy" target="_blank">
-						<button id="instagram">
+                </a>
+                <a href="https://www.instagram.com/muzyczniodkrywcy" target="_blank">
+                    <button id="instagram">
 							<i class="fa fa-instagram" title="Instagram"></i>
 						</button>
-					</a>
-					<a href="https://pl.pinterest.com/aart0500" target="_blank">
-						<button id="pinterest">
+                </a>
+                <a href="https://pl.pinterest.com/aart0500" target="_blank">
+                    <button id="pinterest">
 							<i class="fa fa-pinterest" title="Pinterest"></i>
 						</button>
-					</a>
-					<a href="https://atiartblog.wordpress.com" target="_blank">
-						<button id="wordpress">
+                </a>
+                <a href="https://atiartblog.wordpress.com" target="_blank">
+                    <button id="wordpress">
 							<i class="fa fa-wordpress" title="Wordpress"></i>
 						</button>
-					</a>
-				</div>
-				<div class="navigation">
-					<div class="logo_small">
-						<img src="https://github.com/ladom/atiart/blob/master/odkrywcy_logo.png?raw=true" alt="Logo">
-					</div>
-					<button class="hamburger-menu navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar" id="menu-btn">
+                </a>
+            </div>
+            <div class="navigation">
+                <div class="logo_small">
+                    <img src="https://github.com/ladom/atiart/blob/master/odkrywcy_logo.png?raw=true" alt="Logo">
+                </div>
+                <button class="hamburger-menu navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar" id="menu-btn">
 						<div id="nav-icon1">
 						  <span></span>
 						  <span></span>
 						  <span></span>
 						</div>
 					</button>
-					<nav class="navbar navbar-default collapse" id="navbar">
-						<ul class="nav navbar-nav">
-							<a href="#about" data-toggle="collapse" data-target="#navbar" id="about-btn">
-								<li>O mnie</li>
-							</a>
-							<a href="#mission" data-toggle="collapse" data-target="#navbar" id="mission-btn">
-								<li>Moja misja</li>
-							</a>
-							<a href="#gallery" data-toggle="collapse" data-target="#navbar" id="gallery-btn">
-								<li>Galeria</li>
-							</a>
-							<a href="#prices" data-toggle="collapse" data-target="#navbar" id="prices-btn">
-								<li>Cennik</li>
-							</a>
-							<a href="#contact" data-toggle="collapse" data-target="#navbar" id="contact-btn">
-								<li>Kontakt</li>
-							</a>
-						</ul>
-					</nav>
-				</div>
-				
-			</div>
-		</section>
-		
-		<!--Navigation bar-->
-		
-		<header id="menu" class="static">
-			<div class="container navbar">
-				<div class="logo">
-					<a href="#">
-						<img src="https://github.com/ladom/atiart/blob/master/odkrywcy_logo.png?raw=true" alt="Muzyczni Odkrywcy" title="Strona Główna">
-					</a>
-				</div>
-				<div class="navmenu">
-					<ul>
-						<a href="#about" id="about-btn">
-							<li>O mnie</li>
-						</a>
-						<a href="#mission" id="mission-btn">
-							<li>Moja misja</li>
-						</a>
-						<a href="#gallery" id="gallery-btn">
-							<li>Galeria</li>
-						</a>
-						<a href="#prices" id="prices-btn">
-							<li>Cennik</li>
-						</a>
-						<a href="#contact" id="contact-btn">
-							<li>Kontakt</li>
-						</a>
-					</ul>
-				</div>
-			</div>
-		</header>
-		
-		<!--Jumbotron-->
-		
-		<section class="jumbotron">
-			<div class="container">
-				<div class="slogan">
-					<h1>Każdy ma talent<br>Pomożemy Ci go odkryć !!!</h1>
-				</div>
-			</div>
-		</section>
-		
-		<!--Section about-->
-		
-		<section class="about" id="about">
-			<div class="container">
-				<div class="aboutHeader clearfix">
-					<h1>O mnie</h1>
-				</div>
-				<div class="par3">
-					<img src="https://github.com/ladom/atiart/blob/master/asia1.jpg?raw=true" alt="Joanna Tulińska-Ładomirska">
-					<p>Naukę gry rozpoczęłam mając 6 lat. Skrzypce i muzyka to większa część mojego życia. Po 17 latach edukacji otrzymałam tytuł magistra sztuki. Uczyłam gry na skrzypcach w Ogólnokształcącej Szkole Muzycznej we Wrocławiu, a obecnie w Państwowej Szkole Muzycznej w Bystrzycy Kłodzkiej. Nie ustaję w poszukiwaniu ciekawych sposobów na przekazywanie wiedzy. Doskonalę swe umiejętności biorąc udział w kursach i poznaję nowe metody nauki sprzyjające młodym rozwijającym się umysłom. 
-						<a data-toggle="collapse" data-target="#more" class="coll-dots detal2" id="more-btn">
-							(więcej)
-						</a>
-					</p>
-					<div id="more" class="collapse">
-						<p>Po wielu latach pracy z dziećmi wiem, że przyjazna atmosfera podczas zajęć jak i budowanie relacji pełnej empatii są tak samo ważne jak dążenie do ustalonego celu i pokonywanie technicznych trudności. Staram się równoważyć oba aspekty, by najlepiej przekazać wiedzę oraz zasiać w ziarenko kiełkującej muzycznej pasji. Moim osobistym marzeniem jest bawić muzyką i pokazać ją jak największej ilości dzieci, by mogły stać się w przyszłości świadomymi odbiorcami tej sztuki.</p>
-						<p>Jeśli muzyka ma być trudna, a nauka jej męcząca dla dzieci to przepraszam, nie ten adres. Dla mnie nie liczą się szczególne zdolności i nie jest moim priorytetem wychowanie międzynarodowej gwiazdy. To co dla mnie w graniu najważniejsze to radość, satysfakcja z pokonywania kolejnych etapów i pasja na całe życie. Być może Twoje dziecko nie zostanie kolejnym Beethovenem czy Mozartem, ale możliwe, że łatwiej nauczy się zagadnień matematycznych, języka obcego, poćwiczy swoją cierpliwość i poczuje większą pewność siebie.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!--Section mission-->
-		
-		<section class="mission" id="mission">
-			<div class="container">
-				<div class="missionHeader clearfix">
-					<h1>Moja misja</h1>
-				</div>
-				<div class="par1">
-					<p class="text-justify">Gdzieś między nauką nowego języka obcego, a zajęciami sportowymi dzieci mają wiele innych ciekawych aktywności. Jako rodzic zastanawiasz się może nad dodaniem do tej listy jeszcze zajęć muzycznych. Warto zatem zwrócić uwagę na korzyści płynące z nauki gry na instrumencie.</p><p>
-Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu oraz funduszy w nią zainwestowanych.
-</p>
-				</div>
-				<div class="par1">
-					<img src="https://github.com/ladom/atiart/blob/master/nr1.png?raw=true" alt="Nr 1">
-					<p>Granie na instrumencie wyostrza koncentrację.<br>Kiedy jednocześnie zerkasz w nuty, grasz dźwięk, słuchasz. Kiedy utrzymujesz puls, poprawiasz intonację, analizujesz schematy rytmiczne, Twój mózg działa na najwyższych obrotach, pełne skupienie obowiązkowe!
-</p>
-				</div>
-				<div class="par2">
-					<img src="https://github.com/ladom/atiart/blob/master/nr2.png?raw=true" alt="Nr 2">
-					<p>Umiejętność lepszego zarządzania czasem i umiejętności organizacyjne.<br>Aby robić choćby minimalne postępy w graniu, należy poświęcić na to czas i zaangażowanie, nawet wtedy, a może zwłaszcza wtedy, kiedy nachodzi nas ochota na zrobienie czegoś innego.
-</p>
-				</div>
-				<div class="par1">
-					<img src="https://github.com/ladom/atiart/blob/master/nr3.png?raw=true" alt="Nr 3">
-					<p>Ćwiczenie cierpliwości, opanowanie, wytrwałość.<br>To kolejne cenne wartości dodatkowe nauki gry na skrzypcach, trąbce, gitarze czy innym instrumencie. Poprawne wykonanie wymaga podjęcia wielu prób, a każda kolejna jest coraz bliżej doskonałości.
-</p>
-				</div>
-				<div class="par2">
-					<img src="https://github.com/ladom/atiart/blob/master/nr4.png?raw=true" alt="Nr 4">
-					<p>Odpowiedzialność.<br>Odpowiedzialność za wykonanie utworu, odpowiedzialność za podjętą o występie decyzję. Brawo młodzi adepci!
-</p>
-				</div>
-				<div class="par1">
-					<img src="https://github.com/ladom/atiart/blob/master/nr5.png?raw=true" alt="Nr 5">
-					<p>Zdolności zapamiętywania.<br>Niezliczone ilości dźwięków, rytmów i muzycznych środków wyrazowych, aby zagrać kilkadziesiąt sekund. Ale radość ogromna, dodatkowo zawsze i wszędzie można zabrać swoją piosenkę ze sobą. W pamięci.
-</p>
-				</div>
-				<div class="par2">
-					<img src="https://github.com/ladom/atiart/blob/master/nr6.png?raw=true" alt="Nr 6">
-					<p>Lepsza koordynacja.<br>Grając i wykonując ruchy każdą ręką z osobna, rozwija się koordynacja ruchowa, dzięki której skok na jednej nodze, nie będzie już nigdy problemem.</p>
-				</div>
-				<div class="par1">
-					<img src="https://github.com/ladom/atiart/blob/master/nr7.png?raw=true" alt="Nr 7">
-					<p>Większe zdolności językowe.<br>Wrażliwość słuchowa pozwala na łatwiejsze rozróżnianie fonetyki języków obcych. Prościej mówiąc, zapamiętujemy lepiej rytm i melodię języka obcego, przez co dużo łatwiej jest nam się go nauczyć.</p>
-				</div>
-				<div class="par2">
-					<img src="https://github.com/ladom/atiart/blob/master/nr8.png?raw=true" alt="Nr 8">
-					<p>Kreatywność.<br>Tak modna ostatnimi czasy kreatywność w muzyce objawia się improwizacją i możliwością tworzenia własnych zupełnie nowych utworów. Ilość kombinacji nieograniczona!</p>
-				</div>
-				<div class="par1">
-					<img src="https://github.com/ladom/atiart/blob/master/nr9.png?raw=true" alt="Nr 9">
-					<p>„Muzyka łagodzi obyczaje”.<br>Trudno się z tym nie zgodzić. Redukuje stres, odpręża, wprawia w dobry nastrój. Grając relaksujesz się sam oraz możesz sprawić przyjemność innym.</p>
-				</div>
-				<div class="par2">
-					<img src="https://github.com/ladom/atiart/blob/master/nr10.png?raw=true" alt="Nr 10">
-					<p>Buduje pewność siebie, podnosi umiejętności autoprezentacji i oswaja stres sceniczny.<br>Któż nie chciałby być jak gwiazda sceny muzycznej. Te występy, wielkie grono wielbicieli, trasy koncertowe. Od pierwszych chwil nauki gry na skrzypcach czy innym instrumencie, koncertując możesz poczuć się jak gwiazda.
-</p>
-				</div>
-				<div class="par1"><h2>Nie ma na co czekać.<br><br>Umów się jeszcze dziś na lekcję próbną!</h2></div>
-			</div>
-		</section>
-		
-		<!--Pictures gallery-->
+                <nav class="navbar navbar-default collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <a href="#mission" data-toggle="collapse" data-target="#navbar" id="mission-btn">
+                            <li>Nasza misja</li>
+                        </a>
+                        <a href="#about" data-toggle="collapse" data-target="#navbar" id="about-btn">
+                            <li>O nas</li>
+                        </a>
+                        <a href="#gallery" data-toggle="collapse" data-target="#navbar" id="gallery-btn">
+                            <li>Galeria</li>
+                        </a>
+                        <a href="#prices" data-toggle="collapse" data-target="#navbar" id="prices-btn">
+                            <li>Cennik</li>
+                        </a>
+                        <a href="#contact" data-toggle="collapse" data-target="#navbar" id="contact-btn">
+                            <li>Kontakt</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
 
-		<div class="galleryHeader" id="gallery">
-			<h1>Galeria</h1>
-		</div>
-		<div class="gallery">
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall01.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(1)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall02.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(2)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall03.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(3)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall04.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(4)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall05.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(5)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall06.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(6)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall07.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(7)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div class="photo">
-				<img src="https://github.com/ladom/atiart/blob/master/pictures/gall08.jpg?raw=true" alt="Kid violin">
-				<div class="cover">
-					<a onclick="openModal();currentSlide(8)">
-						<button class="photo-btn">
-							<i class="fa fa-search-plus"></i>
-						</button>
-					</a>
-				</div>
-			</div>
-			<div id="myModal" class="modal">
-				<span class="close cursor" onclick="closeModal()">&times;</span>
-				<div class="modal-content">
-					<div class="mySlides">
-						<div class="numbertext">1 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall01.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">2 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall02.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">3 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall03.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">4 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall04.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">5 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall05.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">6 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall06.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">7 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall07.jpg?raw=true">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">8 / 8</div>
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/gall08.jpg?raw=true">
-					</div>
+        </div>
+    </section>
 
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!--Navigation bar-->
 
-				</div>
-			</div>
-		</div>
-		
-		
-		<!--Section prices-->
-		
-		<section class="prices" id="prices">
-			<div class="container pricesHeader">
-				<h1 class="prices-title">Cennik</h1>
-			</div>
-			<div class="container-prices row">
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 package">
-					<h3>Dla dzieci</h3>
-					<h3>Muzyczny Detektyw</h3>
-					<div class="kid-pict">
-						<img src="pictures/kid.jpg">
-					</div>
-					<div class="price-row row">
-						<div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<div class="time">
-								<p>
-									30 min
-								</p>
-							</div>
-							<h4>czas</h4>
-						</div>
-						<div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<div class="price">
-								<p>
-									50 zł
-								</p>
-							</div>
-							<h4>cena</h4>
-						</div>
-					</div>
-					<div class="price-text">
-						<p>
-							Lekcje indywidualne dla dzieci od 6 roku życia, trwające 30 minut.<br>Aby w pełni rozwijać zdolności muzyczne dziecka korzystam podczas zajęć z elementów metody Edwina E. Gordona. Poziom trudności dostosowany jest indywidualnie do predyspozycji każdego z moich podopiecznych. Oprócz nauki gry na skrzypcach na zajęciach gramy również na innych instrumentach m.in. różnych instrumentach perkusyjnych, dzwonkach. Używamy także zabawnych, kolorowych akcesoriów. Wszystko po to, aby nauka gry była pełna barw nie tylko muzycznych. Korzystam ze sprawdzonych na całym świecie materiałów ABRSM (The Associated Board of the Royal Schools of Music)
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 package">
-					<h3>Dla młodzieży i dorosłych</h3>
-					<h3>Tropiciel Melodii</h3>
-					<div class="teen-pict">
-						<img src="pictures/teen.jpg">
-					</div>
-					<div class="price-row row">
-						<div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<div class="time1">
-								<p>
-									45 min
-								</p>
-							</div>
-							<h4>czas</h4>
-						</div>
-						<div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<div class="price1">
-								<p>
-									60 zł
-								</p>
-							</div>
-							<h4>cena</h4>
-						</div>
-					</div>
-					<div class="price-text">
-						<p>
-							Lekcje indywidualne trwające 45 minut, przeznaczone dla dzieci od 10 roku życia.<br>Zajęcia dla rozpoczynających swą przygodę z muzyką, jak też dla tych, którzy początki mają już za sobą. Podczas nauki korzystam z materiałów ABRSM (The Associated Board of the Royal Schools of Music), przeznaczonych dla poszczególnych stopni zaawansowania. Melodie grane podczas lekcji to bardzo często przeboje muzyki klasycznej, popularnej i filmowej. Czerpiąc z naturalnej ciekawości i chęci poznawania nowych zagadnień, oprócz nauki gry na instrumencie, w łatwy sposób przekazuję uczniom niezbędne podstawy teorii muzyki.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!--Footer-->
-		
-		<div class="footer-invisible1 footerInvisible" id="footerInvis1">
-			<i class="fa fa-close footerClose"></i>
-			<div class="footer__invisible--content">
-				<div class="footer__invisible--header" id="contact1">
-					<h3>Dane kontaktowe</h3>
-				</div>
-				<div class="row">
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-						<h4>AtiArt</h4>
-						<p>Nauka gry na skrzypcach<br>Wrocław, Miękinia, Środa Śląska</p>
-						<h4>Joanna Tulińska-Ładomirska</h4>
-						<p>NIP: 886-28-47-388<br>tel: 668 499 130<br>e-mail: <a href="mailto: muzyczniodkrywcy@atiart.pl">muzyczniodkrywcy@atiart.pl</a></p>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer__invisible--photoColumn">
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/contact_photo.jpg?raw=true" id="img1">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-invisible2 footerInvisible" id="footerInvis2">
-			<i class="fa fa-close footerClose"></i>
-			<div class="footer__invisible--content">
-				<div class="footer__invisible--header" id="contact2">
-					<h3>Telefon</h3>
-				</div>
-				<div class="row">
-					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 phoneColumn">
-						<h4>Joanna Tulińska-Ładomirska</h4>
-						<h4>+48 668 499 130</h4>
-						<button>
+    <header id="menu" class="static">
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://github.com/ladom/atiart/blob/master/odkrywcy_logo.png?raw=true" alt="Muzyczni Odkrywcy" title="Strona Główna">
+                </a>
+            </div>
+            <div class="navmenu">
+                <ul>
+                    <a href="#mission" id="mission-btn">
+                        <li>Nasza misja</li>
+                    </a>
+                    <a href="#about" id="about-btn">
+                        <li>O nas</li>
+                    </a>
+                    <a href="#gallery" id="gallery-btn">
+                        <li>Galeria</li>
+                    </a>
+                    <a href="#prices" id="prices-btn">
+                        <li>Cennik</li>
+                    </a>
+                    <a href="#contact" id="contact-btn">
+                        <li>Kontakt</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Jumbotron-->
+
+    <section class="jumbotron">
+        <div class="container">
+            <div class="slogan">
+                <h1>odkrywamy talent<br>twojego dziecka</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Section mission-->
+
+    <section class="mission" id="mission">
+        <div class="container">
+            <div class="missionHeader clearfix">
+                <h1>Nasza misja</h1>
+            </div>
+            <div class="par1">
+                <p class="text-justify">Muzyczni odkrywcy to miejsce stworzone z myślą o muzycznym rozwoju niemowląt i dzieci. Nasza oferta obejmuje zajęcia umuzykalniające dla najmłodszych (niemowlęta i dzieci w wieku przedszkolnym) oraz naukę gry na instrumentach (pianino,
+                    skrzypce, gitara elektryczna, trąbka) dla dzieci starszych i młodzieży.<br>Gdzieś między nauką nowego języka obcego, a zajęciami sportowymi dzieci mają wiele innych ciekawych aktywności. Jako rodzic zastanawiasz się może nad dodaniem
+                    do tej listy jeszcze zajęć muzycznych. Warto zatem zwrócić uwagę na korzyści płynące z nauki gry na instrumencie.</p>
+                <p>
+                    Oto 10 powodów dla których edukacja muzyczna Twojego dziecka jest warta czasu oraz funduszy w nią zainwestowanych.
+                </p>
+            </div>
+            <div class="par1">
+                <img src="https://github.com/ladom/atiart/blob/master/nr1.png?raw=true" alt="Nr 1">
+                <p>Granie na instrumencie wyostrza koncentrację.<br>Kiedy jednocześnie zerkasz w nuty, grasz dźwięk, słuchasz. Kiedy utrzymujesz puls, poprawiasz intonację, analizujesz schematy rytmiczne, Twój mózg działa na najwyższych obrotach, pełne skupienie
+                    obowiązkowe!
+                </p>
+            </div>
+            <div class="par2">
+                <img src="https://github.com/ladom/atiart/blob/master/nr2.png?raw=true" alt="Nr 2">
+                <p>Umiejętność lepszego zarządzania czasem i umiejętności organizacyjne.<br>Aby robić choćby minimalne postępy w graniu, należy poświęcić na to czas i zaangażowanie, nawet wtedy, a może zwłaszcza wtedy, kiedy nachodzi nas ochota na zrobienie
+                    czegoś innego.
+                </p>
+            </div>
+            <div class="par1">
+                <img src="https://github.com/ladom/atiart/blob/master/nr3.png?raw=true" alt="Nr 3">
+                <p>Ćwiczenie cierpliwości, opanowanie, wytrwałość.<br>To kolejne cenne wartości dodatkowe nauki gry na skrzypcach, trąbce, gitarze czy innym instrumencie. Poprawne wykonanie wymaga podjęcia wielu prób, a każda kolejna jest coraz bliżej doskonałości.
+                </p>
+            </div>
+            <div class="par2">
+                <img src="https://github.com/ladom/atiart/blob/master/nr4.png?raw=true" alt="Nr 4">
+                <p>Odpowiedzialność.<br>Odpowiedzialność za wykonanie utworu, odpowiedzialność za podjętą o występie decyzję. Brawo młodzi adepci!
+                </p>
+            </div>
+            <div class="par1">
+                <img src="https://github.com/ladom/atiart/blob/master/nr5.png?raw=true" alt="Nr 5">
+                <p>Zdolności zapamiętywania.<br>Niezliczone ilości dźwięków, rytmów i muzycznych środków wyrazowych, aby zagrać kilkadziesiąt sekund. Ale radość ogromna, dodatkowo zawsze i wszędzie można zabrać swoją piosenkę ze sobą. W pamięci.
+                </p>
+            </div>
+            <div class="par2">
+                <img src="https://github.com/ladom/atiart/blob/master/nr6.png?raw=true" alt="Nr 6">
+                <p>Lepsza koordynacja.<br>Grając i wykonując ruchy każdą ręką z osobna, rozwija się koordynacja ruchowa, dzięki której skok na jednej nodze, nie będzie już nigdy problemem.</p>
+            </div>
+            <div class="par1">
+                <img src="https://github.com/ladom/atiart/blob/master/nr7.png?raw=true" alt="Nr 7">
+                <p>Większe zdolności językowe.<br>Wrażliwość słuchowa pozwala na łatwiejsze rozróżnianie fonetyki języków obcych. Prościej mówiąc, zapamiętujemy lepiej rytm i melodię języka obcego, przez co dużo łatwiej jest nam się go nauczyć.</p>
+            </div>
+            <div class="par2">
+                <img src="https://github.com/ladom/atiart/blob/master/nr8.png?raw=true" alt="Nr 8">
+                <p>Kreatywność.<br>Tak modna ostatnimi czasy kreatywność w muzyce objawia się improwizacją i możliwością tworzenia własnych zupełnie nowych utworów. Ilość kombinacji nieograniczona!</p>
+            </div>
+            <div class="par1">
+                <img src="https://github.com/ladom/atiart/blob/master/nr9.png?raw=true" alt="Nr 9">
+                <p>„Muzyka łagodzi obyczaje”.<br>Trudno się z tym nie zgodzić. Redukuje stres, odpręża, wprawia w dobry nastrój. Grając relaksujesz się sam oraz możesz sprawić przyjemność innym.</p>
+            </div>
+            <div class="par2">
+                <img src="https://github.com/ladom/atiart/blob/master/nr10.png?raw=true" alt="Nr 10">
+                <p>Buduje pewność siebie, podnosi umiejętności autoprezentacji i oswaja stres sceniczny.<br>Któż nie chciałby być jak gwiazda sceny muzycznej. Te występy, wielkie grono wielbicieli, trasy koncertowe. Od pierwszych chwil nauki gry na skrzypcach
+                    czy innym instrumencie, koncertując możesz poczuć się jak gwiazda.
+                </p>
+            </div>
+            <div class="par1">
+                <h2 class="strongTitle">Tylko do końca października<br><br>Bezpłatna lekcja próbna!</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Section about-->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="aboutHeader clearfix">
+                <h1>O nas</h1>
+            </div>
+            <div class="par3">
+                <img src="https://github.com/ladom/atiart/blob/master/asia1.jpg?raw=true" alt="Joanna Tulińska-Ładomirska">
+                <h2 class="teacherTitle">Joanna Tulińska-Ładomirska</h2>
+                <p><br>Założycielka Muzycznych Odkrywców, magister sztuki, skrzypaczka, pedagog z wieloletnim doświadczeniem. W Muzycznych Odkrywcach prowadzi zajęcia umuzykalniające dla niemowląt i dzieci, uczy grać na skrzypcach i pianinie.<br>„Po wielu
+                    latach pracy z dziećmi wiem, że przyjazna atmosfera podczas zajęć jak i budowanie relacji pełnej empatii są tak samo ważne jak dążenie do ustalonego celu i pokonywanie technicznych trudności. Staram się równoważyć oba aspekty, by najlepiej
+                    przekazać wiedzę oraz zasiać ziarenko kiełkującej muzycznej pasji. To co dla mnie w graniu najważniejsze to radość, satysfakcja z wchodzenia na kolejne etapy i pasja na całe życie."<br>Być może Twoje dziecko nie zostanie kolejnym Beethovenem
+                    czy Mozartem, ale możliwe, że łatwiej nauczy się zagadnień matematycznych, języka obcego, poćwiczy swoją cierpliwość i poczuje większą pewność siebie.<br>Moim osobistym marzeniem jest bawić muzyką i pokazać ją tak, by dzieci mogły
+                    stać się w przyszłości świadomymi odbiorcami tej sztuki.
+                </p>
+            </div>
+            <br>
+            <hr><br>
+            <div class="par4">
+                <img class="teacherRight" src="https://github.com/ladom/atiart/blob/master/asia1.jpg?raw=true" alt="Paweł Tuliński">
+                <h2 class="teacherTitle">Paweł Tuliński</h2>
+                <p><br>Trębacz, gitarzysta, bla bla bla<br>Twórca i organizator wielu imprez muzycznych, m.in. Międzyszkolnych Konfrontacji Młodych Trębaczy w Jeleniej Górze.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Pictures gallery-->
+
+    <div class="galleryHeader" id="gallery">
+        <h1>Galeria</h1>
+    </div>
+    <div class="gallery">
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall01.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(1)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall02.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(2)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall03.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(3)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall04.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(4)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall05.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(5)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall06.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(6)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall07.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(7)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="https://github.com/ladom/atiart/blob/master/pictures/gall08.jpg?raw=true" alt="Kid violin">
+            <div class="cover">
+                <a onclick="openModal();currentSlide(8)">
+                    <button class="photo-btn">
+							<i class="fa fa-search-plus"></i>
+						</button>
+                </a>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall01.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall02.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall03.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall04.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall05.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall06.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall07.jpg?raw=true">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/gall08.jpg?raw=true">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Section prices-->
+
+    <section class="prices" id="prices">
+        <div class="container pricesHeader">
+            <h1 class="prices-title">Cennik</h1>
+        </div>
+        <div class="container-prices row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 package">
+                <h3>Dla dzieci</h3>
+                <h3>Muzyczny Detektyw</h3>
+                <div class="kid-pict">
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/kid.jpg?raw=true">
+                </div>
+                <div class="price-row row">
+                    <div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="time">
+                            <p>
+                                30 min
+                            </p>
+                        </div>
+                        <h4>czas</h4>
+                    </div>
+                    <div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="price">
+                            <p>
+                                50 zł
+                            </p>
+                        </div>
+                        <h4>cena</h4>
+                    </div>
+                </div>
+                <div class="price-text">
+                    <p>
+                        Lekcje indywidualne dla dzieci od 6 roku życia, trwające 30 minut.<br>Aby w pełni rozwijać zdolności muzyczne dziecka korzystam podczas zajęć z elementów metody Edwina E. Gordona. Poziom trudności dostosowany jest indywidualnie
+                        do predyspozycji każdego z moich podopiecznych. Oprócz nauki gry na skrzypcach na zajęciach gramy również na innych instrumentach m.in. różnych instrumentach perkusyjnych, dzwonkach. Używamy także zabawnych, kolorowych akcesoriów.
+                        Wszystko po to, aby nauka gry była pełna barw nie tylko muzycznych. Korzystam ze sprawdzonych na całym świecie materiałów ABRSM (The Associated Board of the Royal Schools of Music)
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 package">
+                <h3>Dla młodzieży i dorosłych</h3>
+                <h3>Tropiciel Melodii</h3>
+                <div class="teen-pict">
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/teen.jpg?raw=true">
+                </div>
+                <div class="price-row row">
+                    <div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="time1">
+                            <p>
+                                45 min
+                            </p>
+                        </div>
+                        <h4>czas</h4>
+                    </div>
+                    <div class="price-atr col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="price1">
+                            <p>
+                                60 zł
+                            </p>
+                        </div>
+                        <h4>cena</h4>
+                    </div>
+                </div>
+                <div class="price-text">
+                    <p>
+                        Lekcje indywidualne trwające 45 minut, przeznaczone dla dzieci od 10 roku życia.<br>Zajęcia dla rozpoczynających swą przygodę z muzyką, jak też dla tych, którzy początki mają już za sobą. Podczas nauki korzystam z materiałów ABRSM
+                        (The Associated Board of the Royal Schools of Music), przeznaczonych dla poszczególnych stopni zaawansowania. Melodie grane podczas lekcji to bardzo często przeboje muzyki klasycznej, popularnej i filmowej. Czerpiąc z naturalnej
+                        ciekawości i chęci poznawania nowych zagadnień, oprócz nauki gry na instrumencie, w łatwy sposób przekazuję uczniom niezbędne podstawy teorii muzyki.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <div class="footer-invisible1 footerInvisible" id="footerInvis1">
+        <i class="fa fa-close footerClose"></i>
+        <div class="footer__invisible--content">
+            <div class="footer__invisible--header" id="contact1">
+                <h3>Dane kontaktowe</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h4>AtiArt</h4>
+                    <p>Nauka gry na skrzypcach<br>Wrocław, Miękinia, Środa Śląska</p>
+                    <h4>Joanna Tulińska-Ładomirska</h4>
+                    <p>NIP: 886-28-47-388<br>tel: 668 499 130<br>e-mail: <a href="mailto: muzyczniodkrywcy@atiart.pl">muzyczniodkrywcy@atiart.pl</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer__invisible--photoColumn">
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/contact_photo.jpg?raw=true" id="img1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-invisible2 footerInvisible" id="footerInvis2">
+        <i class="fa fa-close footerClose"></i>
+        <div class="footer__invisible--content">
+            <div class="footer__invisible--header" id="contact2">
+                <h3>Telefon</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 phoneColumn">
+                    <h4>Joanna Tulińska-Ładomirska</h4>
+                    <h4>+48 668 499 130</h4>
+                    <button>
 							<a href="tel:+48668499130">Zadzwoń</a>
 						</button>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer__invisible--photoColumn">
-						<img src="https://github.com/ladom/atiart/blob/master/pictures/phone_photo.jpg?raw=true" id="img2">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-invisible3 footerInvisible" id="footerInvis3">
-			<i class="fa fa-close footerClose"></i>
-			<div class="footer__invisible--content">
-				<div class="footer__invisible--header" id="contact3">
-					<h3>Formularz kontaktowy</h3>
-				</div>
-				<div class="contactForm" id="formularz">
-					<form name="contact" method="post" action="kontakt.php" id="formContact">
-						<label>Imię i nazwisko:</label>
-						<input name="name" placeholder="Jan Kowalski" type="text" minlength="3" required/><br>
-						<label>E-mail</label>
-						<input name="email" type="email" placeholder="email@adres.mail" required/><br>
-						<label>Wiadomość</label>
-						<textarea name="message" placeholder="Tutaj napisz wiadomość do Muzycznych Odkrywców" type="text" required/></textarea><br>
-						<input type="submit" name="submit" id="submit" value="Wyślij">
-						<input type="reset" name="reset" id="reset" value="Anuluj">
-					</form>
-				</div>
-			</div>
-		</div>
-		<div class="footer-invisible4 footerInvisible" id="footerInvis4">
-			<i class="fa fa-close footerClose"></i>
-			<div class="footer__invisible--content">
-				<div class="footer__invisible--header" id="contact4">
-					<h3>Obszar działania</h3>
-				</div>
-				<div class="row">
-					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mapColumn">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59013.77595661654!2d16.829743960667262!3d51.16703375165206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1490644849593" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<h4>Muzyczni Odkrywcy</h4>
-						<p>Nauka gry na skrzypcach</p>
-						<p>Zajęcia mogą odbywać się w zachodniej części Wrocławia (Leśnica, Złotniki, Żerniki, Stabłowice)<br>oraz<br>na terenie gminy Miękinia (Wilkszyn, Lutynia, Pisarzowice)</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer id="contact">
-			<div class="container">
-				<div class="row footer-content">
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-left">
-						<div class="footer-header">
-							<h3>Kontakt</h3>
-						</div>
-					</div>
-					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-right">
-						<button id="address" title="Dane kontaktowe">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer__invisible--photoColumn">
+                    <img src="https://github.com/ladom/atiart/blob/master/pictures/phone_photo.jpg?raw=true" id="img2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-invisible3 footerInvisible" id="footerInvis3">
+        <i class="fa fa-close footerClose"></i>
+        <div class="footer__invisible--content">
+            <div class="footer__invisible--header" id="contact3">
+                <h3>Formularz kontaktowy</h3>
+            </div>
+            <div class="contactForm" id="formularz">
+                <form name="contact" method="post" action="kontakt.php" id="formContact">
+                    <label>Imię i nazwisko:</label>
+                    <input name="name" placeholder="Jan Kowalski" type="text" minlength="3" required/><br>
+                    <label>E-mail</label>
+                    <input name="email" type="email" placeholder="email@adres.mail" required/><br>
+                    <label>Wiadomość</label>
+                    <textarea name="message" placeholder="Tutaj napisz wiadomość do Muzycznych Odkrywców" type="text" required/></textarea><br>
+                    <input type="submit" name="submit" id="submit" value="Wyślij">
+                    <input type="reset" name="reset" id="reset" value="Anuluj">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-invisible4 footerInvisible" id="footerInvis4">
+        <i class="fa fa-close footerClose"></i>
+        <div class="footer__invisible--content">
+            <div class="footer__invisible--header" id="contact4">
+                <h3>Obszar działania</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mapColumn">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59013.77595661654!2d16.829743960667262!3d51.16703375165206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1490644849593" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h4>Muzyczni Odkrywcy</h4>
+                    <p>Nauka gry na skrzypcach</p>
+                    <p>Zajęcia mogą odbywać się w zachodniej części Wrocławia (Leśnica, Złotniki, Żerniki, Stabłowice)<br>oraz<br>na terenie gminy Miękinia (Wilkszyn, Lutynia, Pisarzowice)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-left">
+                    <div class="footer-header">
+                        <h3>Kontakt</h3>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 footer-right">
+                    <button id="address" title="Dane kontaktowe">
 							<i class="fa fa-address-card"></i>
 						</button>
-						<button id="phone" title="Telefon">
+                    <button id="phone" title="Telefon">
 							<i class="fa fa-phone"></i>
 						</button>
-						<button id="mail" title="Formularz kontaktowy">
+                    <button id="mail" title="Formularz kontaktowy">
 							<i class="fa fa fa-envelope"></i>
 						</button>
-						<button id="googlemap" title="Obszar działania">
+                    <button id="googlemap" title="Obszar działania">
 							<i class="fa fa-globe"></i>
 						</button>
 
-						<button id="facebook" title="Facebook">
+                    <button id="facebook" title="Facebook">
 							<a href="https://www.facebook.com/muzyczniodkrywcy" target="_blank">
 								<i class="fa fa-facebook"></i>
 							</a>
 						</button>
-						<button id="instagram" title="Instagram">
+                    <button id="instagram" title="Instagram">
 							<a href="https://www.instagram.com/muzyczniodkrywcy" target="_blank">
 								<i class="fa fa-instagram"></i>
 							</a>
 						</button>
-						<button id="pinterest" title="Pinterest">
+                    <button id="pinterest" title="Pinterest">
 							<a href="https://pl.pinterest.com/aart0500" target="_blank">
 								<i class="fa fa-pinterest"></i>
 							</a>
 						</button>
-						<button id="wordpress" title="Wordpress">
+                    <button id="wordpress" title="Wordpress">
 							<a href="https://atiartblog.wordpress.com" target="_blank">
 								<i class="fa fa-wordpress"></i>
 							</a>
 						</button>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<!-- Scripts -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--<div class="cookiesInfo">
+			<p>Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do Twoich potrzeb. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje. <a href="cookies.html">Polityka cookies</a></p>
+			<button id="cookiesConfirm">Akceptuję</button>
+		</div>-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="js/jquery.validate.min.js"></script>
-		<script src="js/messages_pl.min.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/modalScript.js"></script>
-		<script src="js/footer.js"></script>
-				
-	</body>
-	
+    <!-- Scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pl.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/modalScript.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/cookiesInfo.js"></script>
+
+</body>
+
 </html>
